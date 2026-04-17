@@ -1,0 +1,15 @@
+.my-logo img {
+    height: 50px;
+  }
+  
+  .my-nav-links .nav-link {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .contact-btn {
+    background: orange;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+  }

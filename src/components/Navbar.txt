@@ -1,0 +1,345 @@
+
+/* .my-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: lightgray;
+    transition: 0.3s;
+    z-index: 1000;
+} */
+
+.my-logo img {
+    height: 100px;
+  }
+  
+  .my-nav-links .nav-link {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .contact-btn {
+    background: orange;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+  }
+
+/* black bg for scroll navbar */
+.my-navbar {
+    background: lightgray;
+    transition: 0.3s;
+}
+
+.my-navbar.scrolled {
+    background: gray;
+    border-bottom: 2px solid #d48146;
+}
+
+/* .my-navbar.scrolled .my-nav-links a {
+    color: black;
+} */
+
+/* Logo */
+.my-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.my-logo img {
+    border-radius: 15px;
+}
+
+
+.my-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.my-nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.my-nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffa620;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+
+
+
+/* Our service span */
+.nav-item {
+    color: black;
+    transition: color 0.3s;
+}
+
+/* On scroll */
+.my-navbar.scrolled .nav-item,
+.my-navbar.scrolled .my-nav-links a {
+    color: white;
+}
+
+.my-navbar.scrolled .arrow {
+    border-color: white;
+}
+
+
+
+.my-nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Dropdown */
+.my-dropdown {
+    position: relative;
+}
+
+
+
+
+/*   Dropdown arrow */
+.arrow {
+    display: inline-block;
+    margin-left: 6px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.my-dropdown:hover .arrow {
+    transform: rotate(-135deg);
+    /* up arrow */
+}
+
+
+
+/* Dropdown Menu */
+.my-dropdown-menu {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 180px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+/* Dropdown Items */
+.my-dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.my-dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Hover Effect */
+.my-dropdown-menu li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Show Dropdown */
+.my-dropdown:hover .my-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* Contact Button */
+.contact-btn {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #fe5e00bf, #4350c4);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Animation */
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.contact-btn:hover::before {
+    width: 100%;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* Responsive (basic) */
+
+/* Hamburger */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 900px) {
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .my-nav-links {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .my-nav-links {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .my-nav-links {
+        z-index: 999;
+    }
+  
+    .my-nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background:  rgba(0, 0, 0, 0.9);
+  
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+  
+      display: none;
+    }
+  
+    .my-nav-links.active {
+      display: flex;
+    }
+  
+    .contact-btn {
+      display: none;
+    }
+  }
+
+//            loader 1 
+.loader {
+    width: 220px;
+    height: 6px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* moving shine */
+  .loader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+  
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #ff6a00,
+      #ff9ecf,
+      transparent
+    );
+  
+    animation: loading 1.2s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      left: -10%;
+    }30% {
+      right: 50%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+
+  //  loader  2
+  .loader {
+    width: 220px;
+    height: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eee;
+    position: relative;
+  }
+  
+  /* moving pattern */
+  .loader::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    /* EXACT repeat pattern */
+    width: 200%;
+  
+    background: repeating-linear-gradient(
+      90deg,
+      hotpink 0%,
+      hotpink 70%,     /* 70% */
+      #ff9ecf 70%,
+      #ff9ecf 90%,     /* 20% */
+      #ff4fa3 90%,
+      #ff4fa3 100%     /* 10% */
+    );
+  
+    animation: flow 1.2s linear infinite;
+  }
+  
+  /* perfectly aligned movement */
+  @keyframes flow {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }

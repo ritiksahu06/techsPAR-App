@@ -1,0 +1,28 @@
+.my-swiper {
+    width: 100%;
+  }
+
+  .my-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Desktop */
+.my-swiper {
+    height: 500px;
+  }
+  
+  /* Tablet */
+  @media (max-width: 991px) {
+    .my-swiper {
+      height: 350px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 576px) {
+    .my-swiper {
+      height: 250px;
+    }
+  }

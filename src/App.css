@@ -1,0 +1,176 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* background: rgb(245, 240, 240); */
+    color: black !important;
+}
+
+
+
+
+  span{
+    font-size: 15px;
+  }
+
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Container */
+/* .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+} */
+
+/* Timeline */
+.timeline {
+    position: relative;
+}
+
+/* Line */
+.line {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+}
+
+/* Animated fill */
+.line-fill {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #00f2fe, #4facfe);
+    transition: height 0.2s linear;
+}
+
+/* Sections */
+.section {
+    width: 45%;
+    padding: 25px;
+    margin: 50px 0;
+    border-radius: 15px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+/* Glass effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Left / Right alignment */
+.section:nth-child(odd) {
+    margin-left: 0;
+}
+
+.section:nth-child(even) {
+    margin-left: 55%;
+}
+
+/* Hover Animation */
+.section:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.4s ease;
+}
+
+/* Text */
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    /* padding: 20px; */
+    opacity: 0.7;
+}
+
+/* Contact page Icon */
+
+.social-icons-vertical a {
+    width: 50px;
+    height: 50px;
+    background: #f1f3f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .social-icons-vertical a:hover {
+    transform: translateX(5px);
+    color: #fff;
+  }
+  
+  /* Brand colors */
+  .social-icons-vertical a:nth-child(1):hover { background: #1877f2; }
+  .social-icons-vertical a:nth-child(2):hover { background: #e4405f; }
+  .social-icons-vertical a:nth-child(3):hover { background: #25d366; }
+  .social-icons-vertical a:nth-child(4):hover { background: #0a66c2; }
+  .social-icons-vertical a:nth-child(5):hover { background: #ff0000; }
+
+
+  /* Our-Gallery Images style */
+
+  .gallery-img {
+    width: 100%;
+    /* height: 200px; */
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    transition: ease-in 0.3s;
+  }
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Join-Us */
+
+  .custom-img {
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+
+ 
