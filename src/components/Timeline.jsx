@@ -65,7 +65,7 @@ const Timeline = () => {
 
           <div className="section glass border" data-aos="fade-right">
             <h2>Event Services</h2>
-            <p>We at techPAR have vast experience in delivering comprehensive event solutions.
+            <p>We at techsPAR have vast experience in delivering comprehensive event solutions.
               From planning to execution, we ensure seamless coordination, creative setups, and memorable experiences.</p>
           </div>
 
