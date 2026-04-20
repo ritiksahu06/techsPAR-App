@@ -129,6 +129,8 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -153,6 +155,17 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const location = useLocation();
+
+useEffect(() => {
+  const navbar = document.getElementById("navbarNav");
+  if (navbar?.classList.contains("show")) {
+    navbar.classList.remove("show");
+    setOpenDropdown(false);   // 🔥 reset dropdown on page change
+
+  }
+}, [location]);
 
   return (
     <nav className="navbar navbar-expand-lg my-navbar" ref={navRef}>
@@ -197,13 +210,25 @@ const Navbar = () => {
               </span> */}
 
 
-                  <span
+                  {/* <span
                     className={`nav-link  ${openDropdown ? "active" : ""}`}
                     onClick={() => setOpenDropdown(prev => !prev)}
                     style={{fontSize: '14px'}}
                   >
                     Our Services <span className="arrow"></span>
-                  </span>
+                  </span> */}
+
+
+<span
+  className={`nav-link ${openDropdown ? "active" : ""}`}
+  onClick={() => {
+    if (window.innerWidth < 992) {
+      setOpenDropdown(prev => !prev); // only mobile
+    }
+  }}
+>
+  Our Services <span className="arrow"></span>
+</span>
                   
 
               <ul className={`my-dropdown-menu ${openDropdown ? "show" : ""}`}>
@@ -235,8 +260,8 @@ const Navbar = () => {
           </ul>
 
           {/* Right Contact */}
-          <div className="d-lg-flex mt-3 mt-lg-2 ">
-            <Link to="/contact" className="contact-btn rounded-5 me-4">Contact Us</Link>
+          <div className="d-lg-flex mt-3 mt-lg-2" >
+            <Link to="/contact" className="contact-btn rounded-5 me-4" >Contact Us</Link>
           </div>
 
         </div>

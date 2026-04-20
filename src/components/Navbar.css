@@ -76,13 +76,26 @@
   border-width: 0 2px 2px 0;
   padding: 3px;
   transform: rotate(45deg);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
   vertical-align: middle;
 }
 
-/* Arrow rotates when open (click — both mobile & desktop) */
-.my-nav-links .nav-link.active .arrow {
-  transform: rotate(-135deg);
+/* =========================
+   DESKTOP → HOVER
+========================= */
+@media (min-width: 992px) {
+  .my-nav-links .nav-item:hover .arrow {
+    transform: rotate(-135deg);
+  }
+}
+
+/* =========================
+   MOBILE → CLICK (ACTIVE)
+========================= */
+@media (max-width: 991px) {
+  .my-nav-links .nav-link.active .arrow {
+    transform: rotate(-135deg);
+  }
 }
 
 /* Dropdown Menu */

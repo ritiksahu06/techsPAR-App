@@ -17,11 +17,13 @@ import MobileApp from './pages/MobileApp'
 import Branding from './pages/Branding'
 import Events from './pages/Events'
 import Ecommerce from './pages/Ecommerce'
+import ScrollToTop from './ScrollToTop'
 // import DemoPage from './pages/DemoPage'
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
     <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
