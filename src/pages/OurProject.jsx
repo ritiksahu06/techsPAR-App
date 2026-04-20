@@ -38,15 +38,7 @@ const OurProject = () => {
             </div>
 
             <div className="container my-5">
-  {/* <div className="row g-3 mt-5">
 
-    {[...Array(6)].map((_, i) => (
-      <div className="col-lg-4 col-md-6 col-sm-12" key={i}>
-        <ImageModal />
-      </div>
-    ))}
-
-  </div> */}
 
 <div className="row g-5 mt-5">
   {images.map((img, i) => (
