@@ -1,124 +1,122 @@
-// -------------------------   Original Code but not responsive
-
-// import React, { useEffect, useRef } from "react";
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-
-
+// import React, { useState, useRef, useEffect } from "react";
+// import { Link } from "react-router-dom";  // ✅ removed unused useNavigate
 // import "./Navbar.css";
 
 // const Navbar = () => {
-//   const navRef = useRef(null);
 //   const [openDropdown, setOpenDropdown] = useState(false);
+//   const navRef = useRef(null);
+//   // ✅ removed unused show state
 
 //   useEffect(() => {
 //     const handleScroll = () => {
-//       if (window.scrollY > 50) {
-//         navRef.current.classList.add("scrolled");
-//       } else {
-//         navRef.current.classList.remove("scrolled");
+//       if (navRef.current) {
+//         navRef.current.classList.toggle("scrolled", window.scrollY > 50);
 //       }
 //     };
-
 //     window.addEventListener("scroll", handleScroll);
 //     return () => window.removeEventListener("scroll", handleScroll);
 //   }, []);
 
+//   // ✅ close dropdown when clicking outside
+//   useEffect(() => {
+//     const handleClickOutside = (e) => {
+//       if (!e.target.closest(".my-dropdown")) {
+//         setOpenDropdown(false);
+//       }
+//     };
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => document.removeEventListener("mousedown", handleClickOutside);
+//   }, []);
+
+//   // ✅ close dropdown + mobile menu on link click
+//   const handleLinkClick = () => {
+//     setOpenDropdown(false);
+//     const navCollapse = document.getElementById("navbarNav");
+//     if (navCollapse?.classList.contains("show")) {
+//       navCollapse.classList.remove("show");
+//     }
+//   };
+
 //   return (
-   
-
-//     // <nav className="navbar my-navbar navbar-expand-lg" ref={navRef}>
-//     //   <div className="container-fluid">
-//     //     <Link to="/" className="my-logo">
-//     //       <img src="/images/techspar_logo.png" alt="logo" />
-//     //     </Link>
-
-//     //     <button
-//     //       className="navbar-toggler"
-//     //       type="button"
-//     //       data-bs-toggle="collapse"
-//     //       data-bs-target="#navbarNavAltMarkup"
-//     //     >
-//     //       <span className="navbar-toggler-icon"></span>
-//     //     </button>
-
-//     //     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-//     //     <ul className="navbar-nav ms-auto my-nav-links">
-
-//     //         <li><Link to="/">Home</Link></li>
-//     //         <li><Link to="/about">About Us</Link></li>
-
-//             // {/* Dropdown */}
-//             // <li className="my-dropdown">
-//             //   <span className="nav-item">
-//             //     Our Services <span className="arrow"></span>
-//             //   </span>
-
-//             //   <ul className="my-dropdown-menu">
-//             //     <li><Link to="/web">Web Solutions</Link></li>
-//             //     <li><Link to="/digital">Digital Solutions</Link></li>
-//             //     <li><Link to="/app">Mobile App Development</Link></li>
-//             //     <li><Link to="/branding">Branding & Printing</Link></li>
-//             //     <li><Link to="/events">Event Services</Link></li>
-//             //     <li><Link to="/ecommerce">E-commerce Development</Link></li>
-//             //   </ul>
-//             // </li>
-
-//     //         <li><Link to="/projects">Our Projects</Link></li>
-//     //         <li><Link to="/our-credentials">Our Credentials</Link></li>
-//     //         <li><Link to="/gallery">Our Gallery</Link></li>
-//     //         <li><Link to="/careers">Careers</Link></li>
-
-//     //       </ul>
-
-//     //     </div>
-
-
-
-//     //     <Link to="/contact" className="ms-5 contact-btn">Contact Us</Link>
-
-
-//     //   </div>
-//     // </nav>
-
 //     <nav className="navbar navbar-expand-lg my-navbar" ref={navRef}>
-//   <div className="container-fluid">
+//       <div className="container-fluid px-3">
 
-//     {/* Logo */}
-//     <Link to="/" className="navbar-brand my-logo">
-//       <img src="/images/techspar_logo.png" alt="logo" />
-//     </Link>
+//         {/* Logo */}
+//         <Link to="/" className="navbar-brand my-logo">
+//           <img src="/images/techspar_logo.png" alt="logo" />
+//         </Link>
 
-//     {/* Toggle */}
-//     <button
-//       className="navbar-toggler"
-//       type="button"
-//       data-bs-toggle="collapse"
-//       data-bs-target="#navbarNav"
-//     >
-//       <span className="navbar-toggler-icon"></span>
-//     </button>
+//         {/* Bootstrap Toggler */}
+//         <button
+//           className="navbar-toggler me-2"
+//           type="button"
+//           data-bs-toggle="collapse"
+//           data-bs-target="#navbarNav"
+//           aria-controls="navbarNav"
+//           aria-expanded="false"
+//           aria-label="Toggle navigation"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
 
-//     {/* Menu */}
-//     <div className="collapse navbar-collapse" id="navbarNav">
+//         {/* Menu */}
+//         <div className="collapse navbar-collapse" id="navbarNav">
 
-//       <ul className="navbar-nav mx-auto my-nav-links">
-//         <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
-//         <li className="nav-item"><Link to="/about" className="nav-link">About Us</Link></li>
-//         <li className="nav-item"><Link to="/projects" className="nav-link">Projects</Link></li>
-        
-//       </ul>
+//           <ul className="navbar-nav mx-auto my-nav-links">
 
-//       {/* Contact */}
-//       <div className="d-lg-flex justify-content-lg-end mt-3 mt-lg-0">
-//         <Link to="/contact" className="btn contact-btn">Contact Us</Link>
+//             <li className="nav-item">
+//               <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Us</Link>
+//             </li>
+
+//             {/* Dropdown */}
+//             <li className="nav-item my-dropdown">
+//               <span
+//                 className={`nav-link ${openDropdown ? "active" : ""}`}
+//                 onClick={() => setOpenDropdown(prev => !prev)}
+//               >
+//                 Our Services <span className="arrow"></span>
+//               </span>
+
+//               <ul className={`my-dropdown-menu ${openDropdown ? "show" : ""}`}>
+//                 <li><Link to="/services/web-solutions" onClick={handleLinkClick}>Web Solutions</Link></li>
+//                 <li><Link to="/services/digital-solutions" onClick={handleLinkClick}>Digital Solutions</Link></li>
+//                 <li><Link to="/services/mobile-app" onClick={handleLinkClick}>Mobile App Development</Link></li>
+//                 <li><Link to="/services/branding" onClick={handleLinkClick}>Branding & Printing</Link></li>
+//                 <li><Link to="/services/events" onClick={handleLinkClick}>Event Services</Link></li>
+//                 <li><Link to="/services/ecommerce" onClick={handleLinkClick}>E-commerce Development</Link></li>
+//               </ul>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/projects" className="nav-link" onClick={handleLinkClick}>Our Projects</Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/our-credentials" className="nav-link" onClick={handleLinkClick}>Our Credentials</Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/our-gallery" className="nav-link" onClick={handleLinkClick}>Our Gallery</Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/join-us" className="nav-link" onClick={handleLinkClick}>Join Us</Link>
+//             </li>
+
+//           </ul>
+
+//           {/* Contact */}
+//           <div className="my-contact-wrap">
+//             <Link to="/contact" className="contact-btn" onClick={handleLinkClick}>Contact Us</Link>
+//           </div>
+
+//         </div>
 //       </div>
-
-//     </div>
-//   </div>
-// </nav>
-
+//     </nav>
 //   );
 // };
 
@@ -161,7 +159,7 @@ const Navbar = () => {
       <div className="container-fluid">
 
         {/* Logo */}
-        <Link to="/" className="navbar-brand my-logo ms-4">
+        <Link to="/" className="navbar-brand my-logo ">
           <img src="/images/techspar_logo.png"  alt="logo" />
         </Link>
 
@@ -237,8 +235,8 @@ const Navbar = () => {
           </ul>
 
           {/* Right Contact */}
-          <div className="d-lg-flex mt-3 mt-lg-2 me-4">
-            <Link to="/contact" className="contact-btn rounded-5">Contact Us</Link>
+          <div className="d-lg-flex mt-3 mt-lg-2 ">
+            <Link to="/contact" className="contact-btn rounded-5 me-4">Contact Us</Link>
           </div>
 
         </div>

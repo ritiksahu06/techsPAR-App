@@ -1,11 +1,14 @@
+
+
 import React from 'react';
+import "./ImageModal.css";
 
 const ImageModal = ({ img }) => {
   return (
     <div>
 
       {/* IMAGE CARD */}
-      <div className="img-card position-relative overflow-hidden rounded">
+      <div className="img-card position-relative overflow-hidden rounded shadow-lg p-2">
 
         <img
           src={img}
@@ -21,7 +24,7 @@ const ImageModal = ({ img }) => {
         {/* BUTTON ONLY */}
         <button
           type="button"
-          className="btn btn-light preview-btn position-absolute top-50 start-50 translate-middle"
+          className="btn btn-primary preview-btn position-absolute"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
@@ -68,50 +71,5 @@ const ImageModal = ({ img }) => {
   );
 };
 
-
-// const ImageModal = ({ img }) => {
-//   return (
-//     <div>
-//       <div className="img-card position-relative overflow-hidden rounded">
-
-//         <img
-//           src={`${img}`}
-//           alt="preview"
-//           className="img-fluid"
-//         />
-
-//         <button
-//           type="button"
-//           className="btn btn-light preview-btn position-absolute top-50 start-50 translate-middle"
-//           data-bs-toggle="modal"
-//           data-bs-target={`#modal-${img}`}
-//         >
-//           Preview
-//         </button>
-
-//       </div>
-
-//       {/* Modal */}
-//       <div className="modal fade" id={`modal-${img}`}>
-//         <div className="modal-dialog modal-dialog-centered">
-//           <div className="modal-content">
-
-//             <div className="modal-header border-0">
-//               <button className="btn-close" data-bs-dismiss="modal"></button>
-//             </div>
-
-//             <div className="modal-body text-center">
-//               <img
-//                 src={`${img}`}
-//                 className="img-fluid"
-//               />
-//             </div>
-
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
 export default ImageModal;

@@ -116,7 +116,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ff69b4;
+    color: #ff6A00;
   }
 
   /* fix card size */
@@ -141,13 +141,13 @@
   
   /* custom button */
   .btn-outline-pink {
-    border: 1px solid #ff69b4;
-    color: #ff69b4;
+    border: 1px solid #FF6A00;
+    color: #FF6A00;
     transition: 0.3s;
   }
   
   .btn-outline-pink:hover {
-    background: #ff69b4;
+    background: #FF6A00;
     color: #fff;
   }
 
@@ -177,8 +177,8 @@
     background: linear-gradient(
       90deg,
       transparent,
-      #ff6a00,
-      #ff9ecf,
+      #ff6A00,
+      #ff6A00,
       transparent
     );
   

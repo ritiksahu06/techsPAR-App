@@ -43,7 +43,7 @@ const OurCredentialsPage = () => {
         "/images/our-credentials/toybiz2018-1.png",
         "/images/our-credentials/momentum-jharkhand-global-investor-summit-ranchi copy.png",
       ];
-      console.log(images.length);
+  
 
     
     return (

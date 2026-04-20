@@ -78,8 +78,8 @@ const Footer = () => {
           <div className="row">
             <div className="footer-bottom text-center">
               <h6 className="my-copyright">
-                © 2026
-                <span className="blue">t</span>
+                © 2026 
+                <span className="blue"> t</span>
                 <span className="orange">echs</span>
                 <span className="blue">PAR</span>. All Rights Reserved.
               </h6>

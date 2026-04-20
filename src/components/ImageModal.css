@@ -1,25 +1,42 @@
-/* Parent */
 .img-card {
   position: relative;
   overflow: hidden;
 }
 
-/* Initial state (hidden top) */
+/* Button style */
 .preview-btn {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -120%) scale(0.9);
   opacity: 0;
 
-  transition: transform 0.5s ease, opacity 0.5s ease, background 0.3s;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #9333ea); /* modern gradient */
+  border: none;
+  border-radius: 30px; /* pill shape */
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+
+  cursor: pointer;
+  transition: all 0.45s ease-in-out;
 }
 
-/* On hover → center */
+/* Hover animation (card hover) */
 .img-card:hover .preview-btn {
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  background: red;
+}
+
+/* Button hover effect */
+.preview-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }

@@ -2,30 +2,26 @@
    HERO CONTAINER
 ========================= */
 .hero-container {
-  margin-top: 56px;     /* pushes below fixed navbar */
+  margin-top: 56px;
   position: relative;
 }
 
 /* =========================
-   SWIPER SIZE
+   SWIPER BASE
 ========================= */
 .my-swiper {
   position: relative;
   width: 100%;
   height: 500px;
-  --swiper-navigation-color: transparent; /* prevents Swiper recoloring triangles */
+  --swiper-navigation-color: transparent;
 }
 
 @media (max-width: 991px) {
-  .my-swiper {
-    height: 350px;
-  }
+  .my-swiper { height: 350px; }
 }
 
 @media (max-width: 576px) {
-  .my-swiper {
-    height: 250px;
-  }
+  .my-swiper { height: 250px; }
 }
 
 /* =========================
@@ -44,76 +40,74 @@
 }
 
 /* =========================
-   TRIANGLE PAGINATION
+   DASH PAGINATION
 ========================= */
+.my-swiper .swiper-pagination {
+  bottom: 12px !important;
+}
+
 .my-swiper .swiper-pagination-bullet {
-  width: 14px !important;
-  height: 10px !important;
+  width: 22px !important;
+  height: 3px !important;
+  border-radius: 2px !important;
   background: rgba(255, 255, 255, 0.4) !important;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%) !important;
-  border-radius: 0 !important;
-  margin: 0 6px !important;
   opacity: 1 !important;
+  margin: 0 5px !important;
+  transition: width 0.3s ease, background 0.3s ease !important;
 }
 
 .my-swiper .swiper-pagination-bullet-active {
-  background: white !important;
-  transform: scale(1.2);
+  width: 34px !important;
+  background: #fff !important;
 }
 
 /* =========================
-   NAVIGATION BUTTONS
+   < > ARROWS
 ========================= */
 
-/* Remove Swiper's default text */
-.my-swiper .swiper-button-next::after,
-.my-swiper .swiper-button-prev::after {
+/* 🔥 FIX: properly remove default arrows */
+/* 🔥 Completely remove Swiper default arrow */
+/* Remove default */
+.my-swiper .swiper-button-prev::after,
+.my-swiper .swiper-button-next::after {
   content: "" !important;
   display: none !important;
 }
 
-/* Shared base */
+/* Hide default icon */
 .my-swiper .swiper-button-prev,
 .my-swiper .swiper-button-next {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  z-index: 10;
-  cursor: pointer;
-  transition: border-color 0.3s;
+  font-size: 0 !important;
 }
 
-/* Left arrow */
-.my-swiper .swiper-button-prev {
-  left: 20px !important;
-  right: auto !important;
-  border-top: 10px solid transparent !important;
-  border-bottom: 10px solid transparent !important;
-  border-right: 15px solid white !important;
-  border-left: none !important;
+/* Clean thin arrows */
+.my-swiper .swiper-button-prev::before {
+  content: "‹";   /* thinner */
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;   /* less bold */
 }
 
-/* Right arrow */
+.my-swiper .swiper-button-next::before {
+  content: "›";
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 100;
+}
+
+/* Position */
+.my-swiper .swiper-button-prev,
 .my-swiper .swiper-button-next {
-  right: 20px !important;
-  left: auto !important;
-  border-top: 10px solid transparent !important;
-  border-bottom: 10px solid transparent !important;
-  border-left: 15px solid white !important;
-  border-right: none !important;
+  top: 50% !important;
+  transform: translateY(-50%);
 }
 
-/* Hover */
-.my-swiper .swiper-button-prev:hover {
-  border-right-color: #ddd !important;
-}
+.my-swiper .swiper-button-prev { left: 75px !important; }
+.my-swiper .swiper-button-next { right: 75px !important; }
 
-.my-swiper .swiper-button-next:hover {
-  border-left-color: #ddd !important;
+/* Smooth hover */
+.my-swiper .swiper-button-prev:hover::before,
+.my-swiper .swiper-button-next:hover::before {
+  color: #fff;
+  transform: scale(1.1);
 }
