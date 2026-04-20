@@ -343,3 +343,313 @@
     from { transform: translateX(0); }
     to   { transform: translateX(-50%); }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /////////////////////////////////////////////////////////////
+
+
+  working css on 20-04-2026
+
+
+
+
+  /* =========================================
+   NAVBAR BASE
+========================================= */
+.my-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: white;
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+
+.my-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   LOGO
+========================================= */
+.my-logo img {
+  height: 60px;        /* ✅ fixed — was 100px, too tall on mobile */
+  width: auto;         /* ✅ fixed — was 100%, stretched the logo */
+  border-radius: 15px;
+}
+
+/* =========================================
+   NAV LINKS
+========================================= */
+.my-nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-nav-links .nav-link {
+  color: black !important;
+  font-size: 14px;
+  transition: color 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Underline animation — only on anchor tags, not span */
+.my-nav-links a.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ffa620;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s;
+}
+
+.my-nav-links a.nav-link:hover::after {
+  width: 100%;
+}
+
+/* =========================================
+   DROPDOWN
+========================================= */
+.my-dropdown {
+  position: relative;
+}
+
+/* Arrow */
+.arrow {
+  display: inline-block;
+  margin-left: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+}
+
+/* =========================
+   DESKTOP → HOVER
+========================= */
+@media (min-width: 992px) {
+  .my-nav-links .nav-item:hover .arrow {
+    transform: rotate(-135deg);
+  }
+}
+
+/* =========================
+   MOBILE → CLICK (ACTIVE)
+========================= */
+@media (max-width: 991px) {
+  .my-nav-links .nav-link.active .arrow {
+    transform: rotate(-135deg);
+  }
+}
+
+/* Dropdown Menu */
+.my-dropdown-menu {
+  display: block !important;           /* prevent Bootstrap display:none override */
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 !important;               /* reset Bootstrap margin */
+  border: none !important;            /* reset Bootstrap border */
+  border-radius: 8px;
+  min-width: 190px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  pointer-events: none;
+}
+
+.my-dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.my-dropdown-menu li a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 0 !important;
+  background: none !important;
+}
+
+.my-dropdown-menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Show via React state (click — all screens) */
+.my-dropdown-menu.show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  pointer-events: auto;
+}
+
+/* Show via hover (desktop only) */
+@media (min-width: 992px) {
+  li.nav-item.my-dropdown:hover > .my-dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto;
+  }
+
+  li.nav-item.my-dropdown:hover .arrow {
+    transform: rotate(-135deg);
+  }
+}
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+.my-contact-wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #fe5e00bf, #4350c4) !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: transform 0.4s;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  left: 0;
+  top: 0;
+  transition: width 0.4s;
+}
+
+.contact-btn:hover::before {
+  width: 100%;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
+
+/* =========================================
+   MOBILE (max 991px)
+========================================= */
+@media (max-width: 991px) {
+
+  /* Logo smaller on mobile */
+  .my-logo img {
+    height: 45px;
+  }
+
+  /* Stack nav links vertically */
+  .my-nav-links {
+    flex-direction: column;
+    padding: 8px 0;
+  }
+
+  .my-nav-links .nav-link {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+  }
+
+  /* Underline animation off on mobile */
+  .my-nav-links a.nav-link::after {
+    display: none;
+  }
+
+  /* Mobile dropdown: static, not absolute */
+  .my-dropdown-menu {
+    position: static !important;
+    background: #1a1a1a !important;
+    border-radius: 0 !important;
+    backdrop-filter: none;
+    box-shadow: none;
+    min-width: 100%;
+    transform: none !important;
+
+    /* Collapse with max-height */
+    max-height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: max-height 0.35s ease, opacity 0.3s ease !important;
+    pointer-events: none;
+  }
+
+  .my-dropdown-menu.show {
+    max-height: 400px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto;
+  }
+
+  .my-dropdown-menu li {
+    padding: 10px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  /* Contact button full width on mobile */
+  .my-contact-wrap {
+    padding: 16px;
+  }
+
+  .contact-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE (max 480px)
+========================================= */
+@media (max-width: 480px) {
+  .my-logo img {
+    height: 38px;
+  }
+
+  .my-nav-links .nav-link {
+    font-size: 14px;
+    padding: 9px 14px;
+  }
+}
