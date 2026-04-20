@@ -1,36 +1,36 @@
 import React from 'react';
 
-const ImageModal = () => {
+const ImageModal = ({ img }) => {
   return (
     <div>
 
       {/* IMAGE CARD */}
       <div className="img-card position-relative overflow-hidden rounded">
 
-  <img
-    src="./images/gaming4good.in.png"
-    alt="preview"
-    style={{
-      height: "480px",
-      width: "100%",
-      objectFit: "cover",
-      objectPosition: "top"
-    }}
-  />
+        <img
+          src={img}
+          alt="preview"
+          style={{
+            height: "480px",
+            width: "100%",
+            objectFit: "cover",
+            objectPosition: "top"
+          }}
+        />
 
-  {/* BUTTON ONLY */}
-  <button
-    type="button"
-    className="btn btn-light preview-btn position-absolute top-50 start-50 translate-middle"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModal"
-  >
-    Preview
-  </button>
+        {/* BUTTON ONLY */}
+        <button
+          type="button"
+          className="btn btn-light preview-btn position-absolute top-50 start-50 translate-middle"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Preview
+        </button>
 
 
 
-</div>
+      </div>
 
       {/* MODAL */}
       <div
@@ -67,5 +67,51 @@ const ImageModal = () => {
     </div>
   );
 };
+
+
+// const ImageModal = ({ img }) => {
+//   return (
+//     <div>
+//       <div className="img-card position-relative overflow-hidden rounded">
+
+//         <img
+//           src={`${img}`}
+//           alt="preview"
+//           className="img-fluid"
+//         />
+
+//         <button
+//           type="button"
+//           className="btn btn-light preview-btn position-absolute top-50 start-50 translate-middle"
+//           data-bs-toggle="modal"
+//           data-bs-target={`#modal-${img}`}
+//         >
+//           Preview
+//         </button>
+
+//       </div>
+
+//       {/* Modal */}
+//       <div className="modal fade" id={`modal-${img}`}>
+//         <div className="modal-dialog modal-dialog-centered">
+//           <div className="modal-content">
+
+//             <div className="modal-header border-0">
+//               <button className="btn-close" data-bs-dismiss="modal"></button>
+//             </div>
+
+//             <div className="modal-body text-center">
+//               <img
+//                 src={`${img}`}
+//                 className="img-fluid"
+//               />
+//             </div>
+
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 export default ImageModal;

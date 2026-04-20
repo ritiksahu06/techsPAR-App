@@ -1,243 +1,207 @@
-
+/* =========================================
+   BASE NAVBAR
+========================================= */
 .my-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-  }
-  
-  .my-dropdown {
-    position: relative;
-  }
-  
-  .my-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10000;
-  }
-  
-
-.my-logo img {
-    height: 100px;
-    width: 100%;
-  }
-  
-  /* .my-nav-links .nav-link {
-    margin: 0 10px;
-    color: rgb(194, 25, 25);
-  } */
-  
-  .contact-btn {
-    background: orange;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 5px;
-  }
-
-/* black bg for scroll navbar */
-.my-navbar {
-    /* background: lightgray; */
-    background: white;
-    transition: 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: white;
+  transition: 0.3s;
 }
 
-/* .my-navbar.scrolled {
-    background: gray;
-    border-bottom: 2px solid #d48146;
-} */
 .my-navbar.scrolled {
-    background: rgba(255, 255, 255, 0.15); /* transparent */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-
-/* Logo */
-.my-logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* =========================================
+   LOGO
+========================================= */
 .my-logo img {
-    border-radius: 15px;
+  height: 100px;
+  width: 100%;
+  border-radius: 15px;
 }
 
+/* =========================================
+   NAV LINKS
+========================================= */
 .my-nav-links {
-    display: flex;
-    list-style: none;
-    /* gap: 10px; */
+  display: flex;
+  list-style: none;
 }
 
 .my-nav-links a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    position: relative;
-    transition: 0.3s;
-}
-
-.my-nav-links a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #ffa620;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
-
-
-
-
-/* Our service span */
-.nav-item {
-    color: black;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s;
 }
 
 .my-nav-links .nav-link {
-    color: black !important;
-    transition: 0.3s;
-  }
-  
-  /* On scroll */
-  .my-navbar.scrolled .my-nav-links .nav-link {
-    /* color: white !important; */
-    color: black !important;
-  }
-
-  .my-navbar .arrow {
-    border-color: black;
+  color: black !important;
+  transition: 0.3s;
 }
 
-.my-navbar.scrolled .arrow {
-    border-color: white;
-    border-color: black;
+.my-nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ffa620;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
 }
-
-
 
 .my-nav-links a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-/* Dropdown */
+/* =========================================
+   DROPDOWN
+========================================= */
 .my-dropdown {
-    position: relative;
+  position: relative;
 }
 
-
-
-
-/*   Dropdown arrow */
+/* Arrow */
 .arrow {
-    display: inline-block;
-    margin-left: 6px;
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    padding: 3px;
-    transform: rotate(45deg);
-    transition: 0.3s;
+  display: inline-block;
+  margin-left: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: 0.3s;
 }
 
-.my-dropdown:hover .arrow {
-    transform: rotate(-135deg);
-    /* up arrow */
-}
-
-
+/* Rotate arrow on hover (desktop only handled later) */
 
 /* Dropdown Menu */
 .my-dropdown-menu {
-    position: absolute;
-    top: 35px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    list-style: none;
-    padding: 10px 0;
-    border-radius: 8px;
-    width: 180px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 10000;
 
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 180px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s ease;
 }
 
-/* Dropdown Items */
+/* Items */
 .my-dropdown-menu li {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .my-dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-/* Hover Effect */
+/* Hover effect */
 .my-dropdown-menu li:hover {
-    background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
-/* Show Dropdown */
-.my-dropdown:hover .my-dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+/* =========================================
+   DESKTOP ONLY (hover behavior)
+========================================= */
+/* @media (min-width: 992px) {
+  .my-dropdown:hover .arrow {
+    transform: rotate(-135deg);
+  }
+} */
+
+/* ===== DESKTOP HOVER FIX ===== */
+@media (min-width: 992px) {
+  li.nav-item.my-dropdown:hover > .my-dropdown-menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto;
+  }
+
+  li.nav-item.my-dropdown:hover .arrow {
+    transform: rotate(-135deg);
+  }
 }
 
+/* Click (all screens) */
+.nav-link.active .arrow {
+  transform: rotate(-135deg);
+}
 
-/* Contact Button */
+/* =========================================
+   CLICK SUPPORT (React .show)
+========================================= */
+.my-dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
 .contact-btn {
-    padding: 10px 20px;
-    background: linear-gradient(45deg, #fe5e00bf, #4350c4) !important;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 14px;
-    transition: 0.4s;
-    position: relative;
-    overflow: hidden;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #fe5e00bf, #4350c4) !important;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Button Hover Animation */
 .contact-btn::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    left: 0;
-    top: 0;
-    transition: 0.4s;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  left: 0;
+  top: 0;
+  transition: 0.4s;
 }
 
 .contact-btn:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .contact-btn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* =========================================
+   HAMBURGER (basic)
+========================================= */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
 }
 
 
-
-
-/* Responsive (basic) */
-
-/* Hamburger */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-    color: white;
-  }
-  
+/* .my-navbar .my-logo {
+  margin-left: 20px !important;
+} */

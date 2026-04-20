@@ -36,7 +36,7 @@ const Ecommerce = () => {
 
                     <div className="container">
 
-                        <h5>What makes techPAR stand out in this highly competitive ecommerce market is our:</h5>
+                        <h5>What makes techsPAR stand out in this highly competitive ecommerce market is our:</h5>
 
                         <div className="job-list">
 

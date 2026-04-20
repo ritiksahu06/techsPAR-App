@@ -126,15 +126,19 @@
 
 
 //    testing
+//  this is working code ==============================================================================================
+
 
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   let [openDropdown, setOpenDropdown] = useState(false);
   let navRef = useRef(null);
   let [show, setShow] = useState(false)
+
+  let navigate = useNavigate()
 
   // Scroll effect
   useEffect(() => {
@@ -157,8 +161,8 @@ const Navbar = () => {
       <div className="container-fluid">
 
         {/* Logo */}
-        <Link to="/" className="navbar-brand my-logo ">
-          <img src="/images/techspar_logo.png" alt="logo" />
+        <Link to="/" className="navbar-brand my-logo ms-4">
+          <img src="/images/techspar_logo.png"  alt="logo" />
         </Link>
 
         {/* Toggle */}
@@ -187,12 +191,22 @@ const Navbar = () => {
 
             {/* Dropdown */}
             <li className="nav-item my-dropdown">
-              <span
+              {/* <span
                 className="nav-link"
-                onClick={() => setOpenDropdown(!openDropdown)}
+                onClick={() => setOpenDropdown(prev => !prev)}
               >
                 Our Services <span className="arrow"></span>
-              </span>
+              </span> */}
+
+
+                  <span
+                    className={`nav-link  ${openDropdown ? "active" : ""}`}
+                    onClick={() => setOpenDropdown(prev => !prev)}
+                    style={{fontSize: '14px'}}
+                  >
+                    Our Services <span className="arrow"></span>
+                  </span>
+                  
 
               <ul className={`my-dropdown-menu ${openDropdown ? "show" : ""}`}>
                 <li><Link to="/services/web-solutions">Web Solutions</Link></li>
@@ -223,7 +237,7 @@ const Navbar = () => {
           </ul>
 
           {/* Right Contact */}
-          <div className="d-lg-flex mt-3 mt-lg-2">
+          <div className="d-lg-flex mt-3 mt-lg-2 me-4">
             <Link to="/contact" className="contact-btn rounded-5">Contact Us</Link>
           </div>
 
@@ -235,7 +249,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-
+//   End of working code ===================================================================================================
 
 // ----------------------------------------  some responsive issue
 
@@ -501,6 +515,137 @@ export default Navbar;
 //     </nav>
 //     </div>
 
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState, useRef, useEffect } from "react";
+// import { Link } from "react-router-dom";
+// import "./Navbar.css";
+
+// const Navbar = () => {
+//   const [openDropdown, setOpenDropdown] = useState(false);
+//   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+//   const navRef = useRef(null);
+//   const dropdownRef = useRef(null);
+
+//   // Scroll effect
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (navRef.current) {
+//         navRef.current.classList.toggle("scrolled", window.scrollY > 50);
+//       }
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   // Close dropdown when clicking outside
+//   useEffect(() => {
+//     const handleClickOutside = (e) => {
+//       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+//         setOpenDropdown(false);
+//       }
+//     };
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => document.removeEventListener("mousedown", handleClickOutside);
+//   }, []);
+
+//   const closeMobileMenu = () => {
+//     setMobileMenuOpen(false);
+//     setOpenDropdown(false);
+//   };
+
+//   return (
+//     <nav className="my-navbar" ref={navRef}>
+//       <div className="nav-container">
+
+//         {/* Logo */}
+//         <Link to="/" className="my-logo" onClick={closeMobileMenu}>
+//           <img src="/images/techspar_logo.png" alt="TechSpar Logo" />
+//         </Link>
+
+//         {/* Hamburger */}
+//         <button
+//           className={`menu-toggle ${mobileMenuOpen ? "open" : ""}`}
+//           onClick={() => setMobileMenuOpen(prev => !prev)}
+//           aria-label="Toggle menu"
+//         >
+//           <span></span>
+//           <span></span>
+//           <span></span>
+//         </button>
+
+//         {/* Menu */}
+//         <div className={`nav-menu ${mobileMenuOpen ? "active" : ""}`}>
+
+//           <ul className="my-nav-links">
+//             <li className="nav-item">
+//               <Link to="/" className="nav-link" onClick={closeMobileMenu}>Home</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/about" className="nav-link" onClick={closeMobileMenu}>About Us</Link>
+//             </li>
+
+//             {/* Dropdown */}
+//             <li className="nav-item my-dropdown" ref={dropdownRef}>
+//               <span
+//                 className={`nav-link dropdown-trigger ${openDropdown ? "active" : ""}`}
+//                 onClick={() => setOpenDropdown(prev => !prev)}
+//               >
+//                 Our Services
+//                 <span className={`arrow ${openDropdown ? "up" : ""}`}></span>
+//               </span>
+//                <span
+//   className={`nav-link dropdown-trigger ${openDropdown ? "active" : ""}`}
+//   onClick={() => setOpenDropdown(prev => !prev)}
+// >
+//   Our Services <span className="arrow"></span>
+// </span> 
+
+//               <ul className={`my-dropdown-menu ${openDropdown ? "show" : ""}`}>
+//                 <li><Link to="/services/web-solutions" onClick={closeMobileMenu}>Web Solutions</Link></li>
+//                 <li><Link to="/services/digital-solutions" onClick={closeMobileMenu}>Digital Solutions</Link></li>
+//                 <li><Link to="/services/mobile-app" onClick={closeMobileMenu}>Mobile App Development</Link></li>
+//                 <li><Link to="/services/branding" onClick={closeMobileMenu}>Branding & Printing</Link></li>
+//                 <li><Link to="/services/events" onClick={closeMobileMenu}>Event Services</Link></li>
+//                 <li><Link to="/services/ecommerce" onClick={closeMobileMenu}>E-commerce Development</Link></li>
+//               </ul>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link to="/projects" className="nav-link" onClick={closeMobileMenu}>Our Projects</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/our-credentials" className="nav-link" onClick={closeMobileMenu}>Our Credentials</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/our-gallery" className="nav-link" onClick={closeMobileMenu}>Our Gallery</Link>
+//             </li>
+//             <li className="nav-item">
+//               <Link to="/join-us" className="nav-link" onClick={closeMobileMenu}>Join Us</Link>
+//             </li>
+//           </ul>
+
+//           {/* Contact Button */}
+//           <div className="nav-contact">
+//             <Link to="/contact" className="contact-btn" onClick={closeMobileMenu}>Contact Us</Link>
+//           </div>
+
+//         </div>
+//       </div>
+//     </nav>
 //   );
 // };
 

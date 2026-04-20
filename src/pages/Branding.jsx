@@ -166,7 +166,7 @@ const Branding = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6">
                         <div className="text-center mb-3">
-                            <h2 className="fw-bold">brochure-design</h2>
+                            <h2 className="fw-bold">Brochure Design</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 

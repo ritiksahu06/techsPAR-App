@@ -15,7 +15,7 @@ const Footer = () => {
             {/* Logo + About */}
             <div className="col-12 col-md-6 col-lg-3">
               <h4 className="my-logo">
-                <span className="blue">T</span>
+                <span className="blue">t</span>
                 <span className="orange">echs</span>
                 <span className="blue">PAR</span>
               </h4>
@@ -50,10 +50,11 @@ const Footer = () => {
                 <div className="loader " style={{ width: '80px' }}></div>
               </div>
               <ul className="list-unstyled">
-                <li className="pt-2"><a href="#">Home</a></li>
-                <li className="pt-2"><a href="#">About Us</a></li>
-                <li className="pt-2"><a href="#">Our Credentials</a></li>
-                <li className="pt-2"><a href="#">Our Gallery</a></li>
+                <li className="pt-2"><a href="/">Home</a></li>
+                <li className="pt-2"><a href="/about">About Us</a></li>
+                <li className="pt-2"><a href="/projects">Our Projects</a></li>
+                <li className="pt-2"><a href="/our-credentials">Our Credentials</a></li>
+                <li className="pt-2"><a href="/our-gallery">Our Gallery</a></li>
                 <li className="pt-2"><a href="#">Join Us</a></li>
               </ul>
             </div>
@@ -68,7 +69,7 @@ const Footer = () => {
               <p>Work : 506 Suneja Tower - I, District Center Janakpuri, New Delhi- 110058, INDIA.</p>
               <p>Reg. Add. : First Floor, GH-8/638, Paschim Vihar, New Delhi, West Delhi, Delhi, 110087</p>
               <p>info@techspar.in</p>
-              <p>+91 - 98714 55398</p>
+              <p>+91 - 98714 55398, 8076631662, 9811955077</p>
             </div>
 
           </div>
@@ -78,7 +79,7 @@ const Footer = () => {
             <div className="footer-bottom text-center">
               <h6 className="my-copyright">
                 © 2026
-                <span className="blue">T</span>
+                <span className="blue">t</span>
                 <span className="orange">echs</span>
                 <span className="blue">PAR</span>. All Rights Reserved.
               </h6>

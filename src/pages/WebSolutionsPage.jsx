@@ -411,10 +411,10 @@ const WebSolutionsPage = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
                         <h5>What we Offer</h5>
-                        <p>We, at techPAR, offer affordable services with no hidden costs.</p>
+                        <p>We, at techsPAR, offer affordable services with no hidden costs.</p>
 
                         <h5>Domain Registration</h5>
-                        <p>Domain Registration is of prime concern for any enterprise aiming to tap the immense potential of the web through a website. techPAR, helps customers to achieve their business objectives without spending a large amount of money, which separates us from others.</p>
+                        <p>Domain Registration is of prime concern for any enterprise aiming to tap the immense potential of the web through a website. techsPAR, helps customers to achieve their business objectives without spending a large amount of money, which separates us from others.</p>
 
                     </div>
 
@@ -432,7 +432,7 @@ const WebSolutionsPage = () => {
                     <div className="container">
 
                         <h5>Web Hosting</h5>
-                        <p>We have a vast expertise in website management and web hosting platform invariably the most reliable one available. techPAR offers a comprehensive spectrum of hosting services, including:</p>
+                        <p>We have a vast expertise in website management and web hosting platform invariably the most reliable one available. techsPAR offers a comprehensive spectrum of hosting services, including:</p>
 
                         <div className="job-list">
 

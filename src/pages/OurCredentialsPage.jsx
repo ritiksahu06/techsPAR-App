@@ -2,6 +2,50 @@ import React from 'react';
 import Banner from '../components/Banner';
 
 const OurCredentialsPage = () => {
+
+
+    const images = [
+        "/images/our-credentials/bharat-mobility.png",
+        "/images/our-credentials/smart.png",
+        "/images/our-credentials/bharat-expo.png",
+        "/images/our-credentials/bsx-logo.png",
+        "/images/our-credentials/krishi-1.png",
+        "/images/our-credentials/i-auto.png",
+        "/images/our-credentials/imme-2.png",
+        "/images/our-credentials/wood.png",
+        "/images/our-credentials/accma.png",
+        "/images/our-credentials/pamex-24.png",
+        "/images/our-credentials/auto-expo.png",
+        "/images/our-credentials/inno-rail.png",
+        "/images/our-credentials/wood-2022.png",
+        "/images/our-credentials/5th-BuildCon-Nepal_2019.png",
+        "/images/our-credentials/5thNepalWood_2019.png",
+        "/images/our-credentials/8th.png",
+        "/images/our-credentials/15th auto expo-1.png",
+        "/images/our-credentials/a-hai.png",
+        "/images/our-credentials/conmac_2018.png",
+        "/images/our-credentials/e3_2018.png",
+        "/images/our-credentials/Future_Mobility_Show_2019.png",
+        "/images/our-credentials/GES_2018.png",
+        "/images/our-credentials/iisgs_2016.png",
+        "/images/our-credentials/im-12.png",
+        "/images/our-credentials/imme-kolkatta-1.png",
+        "/images/our-credentials/imme-kolkatta-2018.png",
+        "/images/our-credentials/inno-rail-2018.png",
+        "/images/our-credentials/inno-rail-logo-1.png",
+        "/images/our-credentials/innorail.png",
+        "/images/our-credentials/IRCE_2018.png",
+        "/images/our-credentials/krushi_odisha.png",
+        "/images/our-credentials/momentum_jharkhand.png",
+        "/images/our-credentials/pack-plus-hyderabad-2016-1.png",
+        "/images/our-credentials/pama.png",
+        "/images/our-credentials/tourism.png",
+        "/images/our-credentials/toybiz2018-1.png",
+        "/images/our-credentials/momentum-jharkhand-global-investor-summit-ranchi copy.png",
+      ];
+      console.log(images.length);
+
+    
     return (
         <>
             
@@ -11,7 +55,7 @@ const OurCredentialsPage = () => {
                 ]} />
 
                 <div className="text-center mt-5">
-                    <h2 className="fw-bold">Events of techPAR Solutions</h2>
+                    <h2 className="fw-bold">Events of techsPAR Solutions</h2>
                     <div className="loader mx-auto mt-3"></div>
                 </div>
 
@@ -20,12 +64,14 @@ const OurCredentialsPage = () => {
                     <div className="row">
 
                     </div>
-                    <div className="row g-2 mt-5">
+
+
+                    {/* <div className="row g-2 mt-5">
 
 
                         <div className="col-12 col-sm-6 col-md-4 col-lg-2" >
                             <img
-                                src={`./images/our-gallery/1.jpg`}
+                                src={`/images/our-credentials/bharat-mobility.png`}
                                 alt="gallery"
                                 className="img-fluid gallery-img p-2 shadow-lg rounded-2"
                             />
@@ -112,7 +158,22 @@ const OurCredentialsPage = () => {
                         </div>
 
 
-                    </div>
+                    </div> */}
+
+<div className="row mt-5">
+  {images.map((img, index) => (
+      <div className="col-12 col-sm-6 col-md-4 col-lg-2" key={index}>
+      <img
+        src={`${img}`}
+        alt={`gallery-${index}`}
+        className="img-fluid gallery-img p-2 shadow-lg rounded-2"
+      />
+    </div>
+    
+  ))}
+</div>
+
+
                 </div>
 
                 <div className="container-fluid ">

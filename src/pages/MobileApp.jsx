@@ -45,7 +45,7 @@ const MobileApp = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
                         <p>Your app will run smoothly across all devices and remain up to date with the latest security standards. Android app development is one of the core strengths of TechsPAR Solutions, allowing us to deliver reliable and high-performance applications.</p>
-                        <p>For inquiries, feel free to email us at <span className='text-primary'>info@techspar.in</span>
+                        <p>For inquiries, feel free to email us at <span className='text-primary'>info@techspar.in </span>
                             or get in touch with us. Our business development team at TechsPAR Solutions will be happy to assist you.</p>
 
 
