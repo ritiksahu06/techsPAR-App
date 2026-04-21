@@ -61,7 +61,7 @@
 
 import React from 'react'
 import './App.css'
-import './components/scrollAnimations.css' // ✅ CSS import karo
+import './components/ScrollAnimations.css' // ✅ CSS import karo
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import Navbar from './components/Navbar'
