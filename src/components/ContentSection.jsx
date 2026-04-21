@@ -117,43 +117,99 @@
 
 
 
-import React, { useEffect, useRef, useState } from "react";
+// import React, { useEffect, useRef, useState } from "react";
+
+// const ContentSection = () => {
+//   const sectionRef = useRef(null);
+//   const [show, setShow] = useState(false);
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       ([entry]) => {
+//         if (entry.isIntersecting) {
+//           setShow(true); // run only once
+//         }
+//       },
+//       { threshold: 0.2 }
+//     );
+
+//     if (sectionRef.current) {
+//       observer.observe(sectionRef.current);
+//     }
+
+//     return () => {
+//       if (sectionRef.current) {
+//         observer.unobserve(sectionRef.current);
+//       }
+//     };
+//   }, []);
+
+//   return (
+//     <div ref={sectionRef} className="about-content container-lg py-5">
+//       <div className="row align-items-center">
+
+//         {/* IMAGE */}
+//         <div
+//           className={`col-12 col-lg-6 mb-4 mb-lg-0 text-center fade-slide ${
+//             show ? "show" : ""
+//           }`}
+//         >
+//           <img
+//             src="/images/about-img.png"
+//             className="img-fluid rounded about-img"
+//             alt="About"
+//           />
+//         </div>
+
+//         {/* TEXT */}
+//         <div
+//           className={`col-12 col-lg-6 ps-lg-5 text-center  text-lg-start fade-slide ${
+//             show ? "show" : ""
+//           }`}
+//         >
+//           <h3 className="pink mb-2 animate-right delay-2">About Us</h3>
+//           <h2 className="fw-bold mb-3  animate-left delay-2">Company Profile</h2>
+
+//           <div className="loader mb-3 mx-lg-0 mx-auto "></div>
+
+//           <div className="animate-up delay-2">
+//           <p >
+//             TechsPAR Solutions is a New Delhi–based company with a vision to
+//             build long-term relationships while delivering high-quality services.
+//           </p>
+
+//           <p >
+//             We offer website designing, development, SEO, SMO, digital marketing,
+//             mobile apps, and e-commerce solutions.
+//           </p>
+
+//           <p >
+//             We believe in delivering results and building strong partnerships
+//             with our clients.
+//           </p>
+//           </div>
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ContentSection;
+
+
+
+//                 Animation add to this 
+
+import React from "react";
 
 const ContentSection = () => {
-  const sectionRef = useRef(null);
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShow(true); // run only once
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div ref={sectionRef} className="about-content container-lg py-5">
+    <div className="about-content container-lg py-5">
       <div className="row align-items-center">
 
         {/* IMAGE */}
-        <div
-          className={`col-12 col-lg-6 mb-4 mb-lg-0 text-center fade-slide ${
-            show ? "show" : ""
-          }`}
-        >
+        <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center animate-left">
           <img
             src="/images/about-img.png"
             className="img-fluid rounded about-img"
@@ -162,32 +218,29 @@ const ContentSection = () => {
         </div>
 
         {/* TEXT */}
-        <div
-          className={`col-12 col-lg-6 ps-lg-5 text-center text-lg-start fade-slide ${
-            show ? "show" : ""
-          }`}
-        >
-          <h3 className="pink mb-2">About Us</h3>
-          <h2 className="fw-bold mb-3">Company Profile</h2>
+        <div className="col-12 col-lg-6 ps-lg-5 text-center text-lg-start">
+
+          <h3 className="pink mb-2 animate-right delay-1">About Us</h3>
+          <h2 className="fw-bold mb-3 animate-right delay-2">Company Profile</h2>
 
           <div className="loader mb-3 mx-lg-0 mx-auto"></div>
 
-          <p>
+          <p className="animate-up delay-2">
             TechsPAR Solutions is a New Delhi–based company with a vision to
             build long-term relationships while delivering high-quality services.
           </p>
 
-          <p>
+          <p className="animate-up delay-3">
             We offer website designing, development, SEO, SMO, digital marketing,
             mobile apps, and e-commerce solutions.
           </p>
 
-          <p>
+          <p className="animate-up delay-4">
             We believe in delivering results and building strong partnerships
             with our clients.
           </p>
-        </div>
 
+        </div>
       </div>
     </div>
   );

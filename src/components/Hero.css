@@ -181,9 +181,27 @@
 .slide-content {
   position: absolute;
   left: 8%;
+  right: 8%;
   z-index: 10;
-  max-width: 600px;
+  max-width: 550px;
+  width: auto;           /* 🔥 change this */
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  .slide-content {
+    left: 5%;
+    right: 5%;
+    max-width: 100%;   /* 🔥 fix overflow */
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .small-text {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
 }
 
 /* =========================

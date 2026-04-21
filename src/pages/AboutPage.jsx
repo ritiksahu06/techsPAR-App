@@ -22,7 +22,7 @@ const AboutPage = () => {
         <div className="container-fluid about-content text-center">
 
           {/* Heading */}
-          <h3 className="">Mission, Vision & Value</h3>
+          <h3 className="animate-up">Mission, Vision & Value</h3>
 
           {/* Loader */}
           <div className="loader mb-2 mx-auto"></div>

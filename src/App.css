@@ -1,45 +1,45 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    color: black !important;
+  font-family: 'Segoe UI', sans-serif;
+  color: black !important;
 }
 
 
 
 
-  span{
-    font-size: 15px;
-  }
+span {
+  font-size: 15px;
+}
 
 
 /* Header */
 .header {
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 /* Hero */
 .hero {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .hero h1 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .hero p {
-    opacity: 0.8;
-    margin-top: 10px;
+  opacity: 0.8;
+  margin-top: 10px;
 }
 
 /* Container */
@@ -52,150 +52,228 @@ body {
 
 /* Timeline */
 .timeline {
-    position: relative;
+  position: relative;
 }
 
 
 
 /* Line */
 .line {
-    position: absolute;
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-50%);
 }
 
 /* Animated fill */
 .line-fill {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(to bottom, #00f2fe, #4facfe);
-    transition: height 0.2s linear;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, #00f2fe, #4facfe);
+  transition: height 0.2s linear;
 }
 
 /* Sections */
 .section {
-    width: 45%;
-    padding: 25px;
-    margin: 50px 0;
-    border-radius: 15px;
-    position: relative;
+  width: 45%;
+  padding: 25px;
+  margin: 50px 0;
+  border-radius: 15px;
+  position: relative;
 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* 🔥 MUST */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  /* 🔥 MUST */
 }
 
 /* Glass effect */
 .glass {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Left / Right alignment */
 .section:nth-child(odd) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .section:nth-child(even) {
-    margin-left: 55%;
+  margin-left: 55%;
 }
 
 /* Hover Animation */
 .section:hover {
-    transform: translateY(-10px) scale(1.02);
-    transition: 0.4s ease;
+  transform: translateY(-10px) scale(1.02);
+  transition: 0.4s ease;
 }
 
 /* Text */
 .section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .section p {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* Footer */
 .footer {
-    text-align: center;
-    /* padding: 20px; */
-    opacity: 0.7;
+  text-align: center;
+  /* padding: 20px; */
+  opacity: 0.7;
 }
 
 /* Contact page Icon */
 
 .social-icons-vertical a {
-    width: 50px;
-    height: 50px;
-    background: #f1f3f5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    font-size: 24px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .social-icons-vertical a:hover {
-    transform: translateX(5px);
-    color: #fff;
-  }
-  
-  /* Brand colors */
-  .social-icons-vertical a:nth-child(1):hover { background: #1877f2; }
-  .social-icons-vertical a:nth-child(2):hover { background: #e4405f; }
-  .social-icons-vertical a:nth-child(3):hover { background: #25d366; }
-  .social-icons-vertical a:nth-child(4):hover { background: #0a66c2; }
-  .social-icons-vertical a:nth-child(5):hover { background: #ff0000; }
+  width: 50px;
+  height: 50px;
+  background: #f1f3f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-icons-vertical a:hover {
+  transform: translateX(5px);
+  color: #fff;
+}
+
+/* Brand colors */
+.social-icons-vertical a:nth-child(1):hover {
+  background: #1877f2;
+}
+
+.social-icons-vertical a:nth-child(2):hover {
+  background: #e4405f;
+}
+
+.social-icons-vertical a:nth-child(3):hover {
+  background: #25d366;
+}
+
+.social-icons-vertical a:nth-child(4):hover {
+  background: #0a66c2;
+}
+
+.social-icons-vertical a:nth-child(5):hover {
+  background: #ff0000;
+}
 
 
-  /* Our-Gallery Images style */
+/* Our-Gallery Images style */
 
-  .gallery-img {
-    width: 100%;
-    /* height: 200px; */
-    object-fit: contain;
-    border-radius: 10px;
-    display: block;
-    transition: ease-in 0.3s;
-  }
-  .gallery-img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Join-Us */
+.gallery-img {
+  width: 100%;
+  /* height: 200px; */
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  transition: ease-in 0.3s;
+}
 
-  .custom-img {
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-  }
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* Join-Us */
+
+.custom-img {
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
 
 
- /*                                Animation for the text and the image                                    */
+/*                                Animation for the text and the image                                    */
 
 
 /* Scoped animation */
-.about-content .fade-slide {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+/* .about-content .fade-slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+} */
+
+/* Visible state */
+/* .about-content .fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+/* Optional stagger (premium feel) */
+/* .about-content .fade-slide:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+.about-content .fade-slide:nth-child(2) {
+  transition-delay: 0.4s;
+} */
+
+
+
+
+/* Animation for the text like left right and this is global css anywhere we can use for smooth animation */
+
+/* =========================
+   BASE
+========================= */
+/* BASE */
+/* .animate {
+  opacity: 0;
+  transition: all 0.7s ease;
+  will-change: transform, opacity;
+} */
+
+/* TYPES */
+/* .animate-left {
+  transform: translateX(-60px);
+}
+
+.animate-right {
+  transform: translateX(60px);
+}
+
+.animate-up {
+  transform: translateY(40px);
+}
+
+.animate-zoom {
+  transform: scale(0.95);
+} */
+
+/* SHOW (FIXED) */
+/* .animate.show {
+  opacity: 1;
+  transform: none; */
+  /* 🔥 IMPORTANT FIX */
+/* } */
+
+/* DELAYS */
+/* .delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+} */
+
+/* MOBILE SAFE */
+/* @media (max-width: 576px) {
+
+  .animate-left,
+  .animate-right {
+    transform: translateY(30px);
   }
-  
-  /* Visible state */
-  .about-content .fade-slide.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Optional stagger (premium feel) */
-  .about-content .fade-slide:nth-child(1) {
-    transition-delay: 0.5s;
-  }
-  .about-content .fade-slide:nth-child(2) {
-    transition-delay: 0.4s;
-  }
+} */

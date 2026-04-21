@@ -1,0 +1,287 @@
+/* =========================
+   HERO CONTAINER
+========================= */
+.hero-container {
+    margin-top: 56px;
+    position: relative;
+  }
+  
+  /* =========================
+     SWIPER BASE
+  ========================= */
+  .my-swiper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    --swiper-navigation-color: transparent;
+  }
+  
+  @media (max-width: 991px) {
+    .my-swiper { height: 350px; }
+  }
+  
+  @media (max-width: 576px) {
+    .my-swiper { height: 250px; }
+  }
+  
+  /* =========================
+     SLIDE & IMAGE
+  ========================= */
+  .my-swiper .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .my-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* =========================
+     DASH PAGINATION
+  ========================= */
+  .my-swiper .swiper-pagination {
+    bottom: 12px !important;
+  }
+  
+  .my-swiper .swiper-pagination-bullet {
+    width: 22px !important;
+    height: 3px !important;
+    border-radius: 2px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    opacity: 1 !important;
+    margin: 0 5px !important;
+    transition: width 0.3s ease, background 0.3s ease !important;
+  }
+  
+  .my-swiper .swiper-pagination-bullet-active {
+    width: 34px !important;
+    background: #fff !important;
+  }
+  
+  /* =========================
+     < > ARROWS
+  ========================= */
+  
+  /* 🔥 FIX: properly remove default arrows */
+  /* 🔥 Completely remove Swiper default arrow */
+  /* Remove default */
+  /* =========================
+     REMOVE DEFAULT ICON
+  ========================= */
+  .my-swiper .swiper-button-prev::after,
+  .my-swiper .swiper-button-next::after {
+    display: none;
+  }
+  
+  /* =========================
+     BASE BUTTON (NO BG)
+  ========================= */
+  .my-swiper .swiper-button-prev,
+  .my-swiper .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+  
+    background: none;   /* ❌ no circle */
+    border: none;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* =========================
+     ARROW ICON
+  ========================= */
+  .my-swiper .swiper-button-prev::before,
+  .my-swiper .swiper-button-next::before {
+    font-size: clamp(28px, 4vw, 60px); /* 🔥 responsive size */
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    transition: all 0.3s ease;
+  }
+  
+  /* ICON CONTENT */
+  .my-swiper .swiper-button-prev::before {
+    content: "‹";
+  }
+  
+  .my-swiper .swiper-button-next::before {
+    content: "›";
+  }
+  
+  /* =========================
+     POSITION
+  ========================= */
+  .my-swiper .swiper-button-prev {
+    left: 40px;
+  }
+  
+  .my-swiper .swiper-button-next {
+    right: 40px;
+  }
+  
+  /* =========================
+     HOVER EFFECT
+  ========================= */
+  .my-swiper .swiper-button-prev:hover::before,
+  .my-swiper .swiper-button-next:hover::before {
+    color: #fff;
+    transform: scale(1.15);
+  }
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  @media (max-width: 768px) {
+    .my-swiper .swiper-button-prev {
+      left: 12px;
+    }
+  
+    .my-swiper .swiper-button-next {
+      right: 12px;
+    }
+  }
+  
+  /* =========================
+     SLIDE BASE
+  ========================= */
+  .slide {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* =========================
+     OVERLAY (for better text visibility)
+  ========================= */
+  .slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    );
+  }
+  
+  /* =========================
+     TEXT CONTAINER
+  ========================= */
+  .slide-content {
+    position: absolute;
+    left: 8%;
+    right: 8%;           /* 🔥 add this */
+    z-index: 10;
+    max-width: 600px;
+    width: 100%;         /* 🔥 important */
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .slide-content {
+      left: 5%;
+      right: 5%;
+      max-width: 100%;   /* 🔥 fix overflow */
+      text-align: center;
+    }
+  }
+  
+  /* =========================
+     SMALL TEXT (TOP LINE)
+  ========================= */
+  .small-text {
+    font-size: clamp(13px, 1.5vw, 16px);
+    margin-bottom: 16px;
+    color: #f3aa3c;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* =========================
+     MAIN HEADING
+  ========================= */
+  .main-text {
+    font-size: clamp(34px, 5vw, 68px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
+  }
+  
+  .main-text span {
+    display: block;
+    margin-bottom: 6px;
+  
+    opacity: 0;
+    transform: translateY(40px);
+  
+    letter-spacing: 1px;     /* 🔥 words ke beech halka space */
+    word-spacing: 3px;       /* 🔥 words ke beech gap */
+  }
+  
+  .main-text span:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* =========================
+     TEXT SHADOW (better visibility)
+  ========================= */
+  .main-text,
+  .small-text {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* =========================
+     ANIMATION (only active slide)
+  ========================= */
+  .swiper-slide-active .small-text {
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .swiper-slide-active .main-text span {
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  /* line delays */
+  .swiper-slide-active .main-text span:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .swiper-slide-active .main-text span:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  /* =========================
+     KEYFRAMES
+  ========================= */
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* =========================
+     MOBILE (CENTER TEXT)
+  ========================= */
+  @media (max-width: 576px) {
+    .slide-content {
+      left: 5%;
+      right: 5%;
+      text-align: center;
+    }
+  }
