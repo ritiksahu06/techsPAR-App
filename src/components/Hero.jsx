@@ -182,12 +182,12 @@ const Hero = () => {
 
     <div className="slide-content">
       <p className="small-text">
-        Believe in Client Satisfaction.
+        Believe in Client Satisfaction
       </p>
 
       <h1 className="main-text">
         <span>End-to-End Design &</span>
-        <span>Development Process.</span>
+        <span>Development Process</span>
       </h1>
     </div>
   </div>
@@ -201,7 +201,7 @@ const Hero = () => {
 
     <div className="slide-content">
       <p className="small-text">
-        Believe in Client Satisfaction.
+        Believe in Client Satisfaction
       </p>
 
       <h1 className="main-text">
@@ -218,13 +218,13 @@ const Hero = () => {
 
     <div className="slide-content">
       <p className="small-text">
-        Believe in Client Satisfaction.
+        Believe in Client Satisfaction
       </p>
       
 
       <h1 className="main-text">
         <span>Satisfying Clients</span>
-        <span>isn’t a thing we do.</span>
+        <span>isn’t a thing we do</span>
       </h1>
     </div>
   </div>

@@ -68,96 +68,174 @@
 /* 🔥 FIX: properly remove default arrows */
 /* 🔥 Completely remove Swiper default arrow */
 /* Remove default */
+/* =========================
+   REMOVE DEFAULT ICON
+========================= */
 .my-swiper .swiper-button-prev::after,
 .my-swiper .swiper-button-next::after {
-  content: "" !important;
-  display: none !important;
+  display: none;
 }
 
-/* Hide default icon */
+/* =========================
+   BASE BUTTON (NO BG)
+========================= */
 .my-swiper .swiper-button-prev,
 .my-swiper .swiper-button-next {
-  font-size: 0 !important;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+
+  background: none;   /* ❌ no circle */
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Clean thin arrows */
-.my-swiper .swiper-button-prev::before {
-  content: "‹";   /* thinner */
-  font-size: 80px;
+/* =========================
+   ARROW ICON
+========================= */
+.my-swiper .swiper-button-prev::before,
+.my-swiper .swiper-button-next::before {
+  font-size: clamp(28px, 4vw, 60px); /* 🔥 responsive size */
   color: rgba(255, 255, 255, 0.8);
-  font-weight: 100;   /* less bold */
+  font-weight: 200;
+  transition: all 0.3s ease;
+}
+
+/* ICON CONTENT */
+.my-swiper .swiper-button-prev::before {
+  content: "‹";
 }
 
 .my-swiper .swiper-button-next::before {
   content: "›";
-  font-size: 80px;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 100;
 }
 
-/* Position */
-.my-swiper .swiper-button-prev,
+/* =========================
+   POSITION
+========================= */
+.my-swiper .swiper-button-prev {
+  left: 40px;
+}
+
 .my-swiper .swiper-button-next {
-  top: 50% !important;
-  transform: translateY(-50%);
+  right: 40px;
 }
 
-.my-swiper .swiper-button-prev { left: 75px !important; }
-.my-swiper .swiper-button-next { right: 75px !important; }
-
-/* Smooth hover */
+/* =========================
+   HOVER EFFECT
+========================= */
 .my-swiper .swiper-button-prev:hover::before,
 .my-swiper .swiper-button-next:hover::before {
   color: #fff;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .my-swiper .swiper-button-prev {
+    left: 12px;
+  }
 
-
+  .my-swiper .swiper-button-next {
+    right: 12px;
+  }
+}
 
 /* =========================
-   TEXT OVERLAY
+   SLIDE BASE
 ========================= */
 .slide {
   position: relative;
   height: 100%;
   display: flex;
-  align-items: center;   /* vertical center */
-}
-
-/* TEXT */
-.slide-content {
-  position: absolute;
-  left: 8%;
-  color: #fff;
-  z-index: 10;
-  max-width: 600px;
+  align-items: center;
 }
 
 /* =========================
-   DEFAULT HIDDEN STATE
+   OVERLAY (for better text visibility)
+========================= */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+/* =========================
+   TEXT CONTAINER
+========================= */
+.slide-content {
+  position: absolute;
+  left: 8%;
+  z-index: 10;
+  max-width: 600px;
+  color: #fff;
+}
+
+/* =========================
+   SMALL TEXT (TOP LINE)
 ========================= */
 .small-text {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: clamp(13px, 1.5vw, 16px);
+  margin-bottom: 16px;
+  color: #f3aa3c;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
   opacity: 0;
   transform: translateY(20px);
 }
 
+/* =========================
+   MAIN HEADING
+========================= */
 .main-text {
-  font-size: 52px;
-  font-weight: bold;
-  line-height: 1.2;
+  font-size: clamp(34px, 5vw, 68px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
 }
 
 .main-text span {
   display: block;
+  margin-bottom: 6px;
+
   opacity: 0;
   transform: translateY(40px);
+
+  letter-spacing: 1px;     /* 🔥 words ke beech halka space */
+  word-spacing: 3px;       /* 🔥 words ke beech gap */
+}
+
+.main-text span:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================
-   🔥 ACTIVE SLIDE ANIMATION
+   TEXT SHADOW (better visibility)
+========================= */
+.main-text,
+.small-text {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   ANIMATION (only active slide)
 ========================= */
 .swiper-slide-active .small-text {
   animation: fadeUp 0.8s ease forwards;
@@ -167,7 +245,7 @@
   animation: fadeUp 0.8s ease forwards;
 }
 
-/* DELAY */
+/* line delays */
 .swiper-slide-active .main-text span:nth-child(1) {
   animation-delay: 0.3s;
 }
@@ -177,11 +255,22 @@
 }
 
 /* =========================
-   ANIMATION
+   KEYFRAMES
 ========================= */
 @keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* =========================
+   MOBILE (CENTER TEXT)
+========================= */
+@media (max-width: 576px) {
+  .slide-content {
+    left: 5%;
+    right: 5%;
+    text-align: center;
   }
 }
