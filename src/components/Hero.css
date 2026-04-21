@@ -111,3 +111,77 @@
   color: #fff;
   transform: scale(1.1);
 }
+
+
+
+
+/* =========================
+   TEXT OVERLAY
+========================= */
+.slide {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;   /* vertical center */
+}
+
+/* TEXT */
+.slide-content {
+  position: absolute;
+  left: 8%;
+  color: #fff;
+  z-index: 10;
+  max-width: 600px;
+}
+
+/* =========================
+   DEFAULT HIDDEN STATE
+========================= */
+.small-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.main-text {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.main-text span {
+  display: block;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* =========================
+   🔥 ACTIVE SLIDE ANIMATION
+========================= */
+.swiper-slide-active .small-text {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.swiper-slide-active .main-text span {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* DELAY */
+.swiper-slide-active .main-text span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.swiper-slide-active .main-text span:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

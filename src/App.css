@@ -176,4 +176,26 @@ body {
   }
 
 
- 
+ /*                                Animation for the text and the image                                    */
+
+
+/* Scoped animation */
+.about-content .fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* Visible state */
+  .about-content .fade-slide.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional stagger (premium feel) */
+  .about-content .fade-slide:nth-child(1) {
+    transition-delay: 0.5s;
+  }
+  .about-content .fade-slide:nth-child(2) {
+    transition-delay: 0.4s;
+  }
