@@ -156,12 +156,18 @@
 
   /* Loader */
   .loader {
-    width: 220px;
+    width: 100%;          /* 🔥 important */
+    max-width: 220px;     /* limit for large screens */
     height: 4px;
+  
     border-radius: 20px;
     background: rgba(0,0,0,0.1);
+  
     overflow: hidden;
     position: relative;
+  
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* moving shine */
@@ -194,3 +200,9 @@
     }
   }
   
+  /* 🔥 ultra small screens */
+  @media (max-width: 320px) {
+    .loader {
+      max-width: 150px;
+    }
+  }

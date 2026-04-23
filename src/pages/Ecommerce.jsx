@@ -40,49 +40,49 @@ const Ecommerce = () => {
 
                         <div className="job-list">
 
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-1">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Excellent customer service
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-2">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Brand focus and consciousness
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-3">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Delivery of outstanding value to satisfy customers
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-4">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Global scale and extended reach
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-5">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Better understanding of influencing factors in ecommerce market to provide better services for customers every time
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-6">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Use of industry best practices with extensive testing and optimization techniques
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-7">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Proven dedicated teams with both consumer & enterprise focus
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-right delay-8">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Teams that focus on R&D, accelerators/PoCs to reduce time to market
@@ -111,7 +111,7 @@ const Ecommerce = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/e-commerce-developement/user-friendly-shopping-experience.jpg"
                             alt="web"
@@ -126,7 +126,7 @@ const Ecommerce = () => {
                 {/* Secure Payment Integration */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/e-commerce-developement/secure-payment-integration.jpg"
                             alt="web"
@@ -166,7 +166,7 @@ const Ecommerce = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/e-commerce-developement/product-inventory-management.jpg"
                             alt="web"

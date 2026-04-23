@@ -1,0 +1,133 @@
+/* =============================================
+   BASE
+============================================= */
+.animate,
+.animate-left,
+.animate-right,
+.animate-up,
+.animate-down,
+.animate-zoom {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translate3d(0,0,0);  /* 🔥 best GPU trigger */
+}
+
+/* =============================================
+   ANIMATION KEYFRAMES
+============================================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =============================================
+   TRIGGER CLASSES
+============================================= */
+.animate.animated {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+.animate-left.animated {
+  animation: fadeLeft 0.5s ease-out forwards;
+}
+
+.animate-right.animated {
+  animation: fadeRight 0.5s ease-out forwards;
+}
+
+.animate-up.animated {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+.animate-down.animated {
+  animation: fadeDown 0.5s ease-out forwards;
+}
+
+.animate-zoom.animated {
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+/* =============================================
+   DELAY
+============================================= */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* =============================================
+   MOBILE OPTIMIZATION
+============================================= */
+@media (max-width: 768px) {
+  .animate-left.animated,
+  .animate-right.animated {
+    animation: fadeUp 0.5s ease-out forwards;
+  }
+}
+
+/* =============================================
+   REDUCED MOTION
+============================================= */
+@media (prefers-reduced-motion: reduce) {
+  .animate,
+  .animate-left,
+  .animate-right,
+  .animate-up,
+  .animate-down,
+  .animate-zoom {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

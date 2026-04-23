@@ -40,7 +40,7 @@ const WebSolutionsPage = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/web-development.jpg"
                             alt="web"
@@ -65,7 +65,7 @@ const WebSolutionsPage = () => {
                 {/* FULL WIDTH CONTENT BELOW */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/web-application.jpg"
                             alt="web"
@@ -116,7 +116,7 @@ const WebSolutionsPage = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/corporate-sites.jpg"
                             alt="web"
@@ -136,7 +136,7 @@ const WebSolutionsPage = () => {
 
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/brand-product.jpg"
                             alt="web"
@@ -236,7 +236,7 @@ const WebSolutionsPage = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/ngo-sites.jpg"
                             alt="web"
@@ -306,7 +306,7 @@ const WebSolutionsPage = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/website-maintenance.jpg"
                             alt="web"
@@ -420,7 +420,7 @@ const WebSolutionsPage = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/web-hosting&domain.jpg"
                             alt="web"
@@ -457,19 +457,19 @@ const WebSolutionsPage = () => {
                             <p className="d-flex align-items-start">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
-                                Joomla hosting
+                                    Joomla hosting
                                 </span>
                             </p>
                             <p className="d-flex align-items-start">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
-                                E-commerce hosting
+                                    E-commerce hosting
                                 </span>
                             </p>
                             <p className="d-flex align-items-start">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
-                                Email Hosting
+                                    Email Hosting
                                 </span>
                             </p>
                             <p className='text-center'>Need help?</p>

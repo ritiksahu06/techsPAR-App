@@ -54,7 +54,7 @@ const Branding = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
 
                             src='/images/branding-printing/logo-design.jpg'
@@ -70,7 +70,7 @@ const Branding = () => {
                 {/* Graphic Design */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src='/images/branding-printing/Graphic Design.jpg'
                             alt="web"
@@ -177,7 +177,7 @@ const Branding = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src='/images/branding-printing/brochure-design.jpg'
                             alt="web"
@@ -195,7 +195,7 @@ const Branding = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src='/images/branding-printing/poster-design.jpg'
                             alt="web"
@@ -241,7 +241,7 @@ const Branding = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src='/images/branding-printing/stationery-design.jpg'
                             alt="web"
@@ -259,7 +259,7 @@ const Branding = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src='/images/branding-printing/business-card.jpg'
                             alt="web"
@@ -305,7 +305,7 @@ const Branding = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src='/images/branding-printing/e-catalogue-design.jpg'
                             alt="web"

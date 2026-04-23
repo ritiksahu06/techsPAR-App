@@ -70,7 +70,7 @@ const Events = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src='/images/event-services/event-website.jpg'
                             alt="web"
@@ -181,7 +181,7 @@ const Events = () => {
                 {/* Badges/Stationery/ Lanyards etc */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src='/images/event-services/badges.jpg' alt="web"
                             className="img-fluid shadow-lg rounded"
@@ -227,7 +227,7 @@ const Events = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src='/images/event-services/event-staffing.jpg' alt="web"
                             className="img-fluid shadow-lg rounded"
@@ -280,7 +280,7 @@ const Events = () => {
                 {/* Exhibitor/Visitor Registration */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src='/images/event-services/exhibitor-visitor-registration.jpg' alt="web"
                             className="img-fluid shadow-lg rounded"

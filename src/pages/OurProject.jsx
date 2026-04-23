@@ -21,39 +21,37 @@ const OurProject = () => {
     "/images/our-projects/lightroniks.png",
   ];
 
-    return (
-        <div>
-            <Banner
-                title='Our Projects'
-                image='./images/our-gallery-banner.png'
-                breadcrumb={[
-                    { name: "Home", link: "/" },
-                    { name: "Our Projects" }
-                ]}
-            />
+  return (
+    <div>
+      <Banner
+        title='Our Projects'
+        image='./images/our-gallery-banner.png'
+        breadcrumb={[
+          { name: "Home", link: "/" },
+          { name: "Our Projects" }
+        ]}
+      />
 
-            <div className="text-center mt-5">
-                <h2 className="fw-bold">Our Projects</h2>
-                <div className="loader mx-auto mt-3"></div>
+      <div className="text-center mt-5">
+        <h2 className="fw-bold animate">Our Projects</h2>
+        <div className="loader mx-auto mt-3 animate-left"></div>
+      </div>
+
+      <div className="container my-5">
+
+
+        <div className="row g-4 mt-4">
+          {images.map((img, i) => (
+            <div className="col-lg-4 col-md-6 col-12" key={i}>
+              <ImageModal img={img} />
             </div>
-
-            <div className="container my-5">
-
-
-<div className="row g-5 mt-5">
-  {images.map((img, i) => (
-    <div className="col-lg-4 col-md-6 col-sm-12 mb-5" key={i}>
-      <ImageModal img={img} />
-    </div>
-  ))}
-</div>
-
-
-</div>
-
+          ))}
         </div>
-    );
+
+      </div>
+
+    </div>
+  );
 }
 
 export default OurProject;
-

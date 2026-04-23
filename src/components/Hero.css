@@ -178,22 +178,46 @@
 /* =========================
    TEXT CONTAINER
 ========================= */
-.slide-content {
+/* .slide-content {
   position: absolute;
-  left: 8%;
-  right: 8%;
+ left: 8%;
+  right: auto;
+  padding: 0 16px;
   z-index: 10;
   max-width: 550px;
-  width: auto;           /* 🔥 change this */
+  width: auto;          
   color: #fff;
+} */
+
+
+.slide-content {
+  position: absolute;
+
+  left: clamp(16px, 6vw, 100px);  /* 🔥 responsive left spacing */
+  right: 16px;                    /* 🔥 prevents overflow */
+
+  max-width: 550px;
+  width: 100%;
+
+  z-index: 10;
+  color: #fff;
+
+  text-align: left;               /* 🔥 always left */
 }
 
-@media (max-width: 576px) {
+
+/* @media (max-width: 576px) {
   .slide-content {
     left: 5%;
     right: 5%;
-    max-width: 100%;   /* 🔥 fix overflow */
+    max-width: 100%;   
     text-align: center;
+  }
+} */
+
+@media (max-width: 576px) {
+  .slide-content {
+    max-width: 100%;
   }
 }
 
@@ -285,10 +309,18 @@
 /* =========================
    MOBILE (CENTER TEXT)
 ========================= */
-@media (max-width: 576px) {
-  .slide-content {
-    left: 5%;
-    right: 5%;
-    text-align: center;
-  }
+
+
+/* hero container pe */
+.hero-container {
+  overflow: hidden;  /* yeh add karo */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* swiper pe bhi */
+.my-swiper {
+  overflow: hidden;  /* yeh add karo */
+  width: 100%;
+  max-width: 100%;
 }

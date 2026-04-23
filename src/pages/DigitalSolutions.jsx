@@ -57,7 +57,7 @@ const DigitalSolutions = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/digital-solutions/website-marketing.jpg"
                             alt="web"
@@ -72,7 +72,7 @@ const DigitalSolutions = () => {
                 {/* Search Engine Optimization (SEO) */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/digital-solutions/seo.jpg"
                             alt="web"
@@ -113,7 +113,7 @@ const DigitalSolutions = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/digital-solutions/serarch-engine-marketing.jpg"
                             alt="web"
@@ -136,7 +136,7 @@ const DigitalSolutions = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/digital-solutions/social-media-marketing.jpg"
                             alt="web"
@@ -183,7 +183,7 @@ const DigitalSolutions = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/digital-solutions/paid-advertisement.jpg"
                             alt="web"
@@ -205,7 +205,7 @@ const DigitalSolutions = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/digital-solutions/content-marketing.jpg"
                             alt="web"
@@ -251,7 +251,7 @@ const DigitalSolutions = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/digital-solutions/video-marketing.jpg"
                             alt="web"
@@ -269,7 +269,7 @@ const DigitalSolutions = () => {
                 <div className="row g-4 my-5">
 
                     {/* LEFT SIDE (LIMITED CONTENT) */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/our-services/digital-solutions/email-marketing.jpg"
                             alt="web"
@@ -313,7 +313,7 @@ const DigitalSolutions = () => {
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/our-services/digital-solutions/sms-marketing.jpg"
                             alt="web"

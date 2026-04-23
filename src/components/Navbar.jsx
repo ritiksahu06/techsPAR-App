@@ -167,8 +167,9 @@ useEffect(() => {
   }
 }, [location]);
 
+
   return (
-    <nav className="navbar navbar-expand-lg my-navbar" ref={navRef}>
+    <nav className="navbar navbar-expand-lg my-navbar " ref={navRef}>
       <div className="container-fluid">
 
         {/* Logo */}
@@ -178,7 +179,7 @@ useEffect(() => {
 
         {/* Toggle */}
         <button
-          className="navbar-toggler me-2"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -202,22 +203,7 @@ useEffect(() => {
 
             {/* Dropdown */}
             <li className="nav-item my-dropdown">
-              {/* <span
-                className="nav-link"
-                onClick={() => setOpenDropdown(prev => !prev)}
-              >
-                Our Services <span className="arrow"></span>
-              </span> */}
-
-
-                  {/* <span
-                    className={`nav-link  ${openDropdown ? "active" : ""}`}
-                    onClick={() => setOpenDropdown(prev => !prev)}
-                    style={{fontSize: '14px'}}
-                  >
-                    Our Services <span className="arrow"></span>
-                  </span> */}
-
+           
 
 <span
   className={`nav-link ${openDropdown ? "active" : ""}`}

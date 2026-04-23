@@ -52,7 +52,7 @@ const MobileApp = () => {
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-right">
                         <img
                             src="/images/mobile-app-development/android-app-development.jpg"
                             alt="web"
@@ -67,7 +67,7 @@ const MobileApp = () => {
                 {/* IOS App Development */}
                 <div className="row g-4 my-5">
 
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 animate-left">
                         <img
                             src="/images/mobile-app-development/ios-app-development.jpg"
                             alt="web"
