@@ -1,0 +1,396 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: black !important;
+  }
+  
+  
+  
+  
+  span {
+    font-size: 15px;
+  }
+  
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 45px;
+  }
+  
+  .hero p {
+    opacity: 0.8;
+    margin-top: 10px;
+  }
+  
+  /* Container */
+  /* .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 0;
+  } */
+  
+  /* ------------------------------------------------ Timeline -------------------------------------------------*/
+  
+  /* .timeline {
+    position: relative;
+  } */
+  
+  
+  
+  /* Line */
+  /* .line {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+  } */
+  
+  /* Animated fill */
+  /* .line-fill {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #00f2fe, #4facfe);
+    transition: height 0.2s linear;
+  } */
+  
+  /* Sections */
+  /* .section {
+    width: 45%;
+    padding: 25px;
+    margin: 50px 0;
+    border-radius: 15px;
+    position: relative;
+  
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    /* 🔥 MUST */
+  /* } */
+  
+  
+  
+  /* Left / Right alignment */
+  /* .section:nth-child(odd) {
+    margin-left: 0;
+  }
+  
+  .section:nth-child(even) {
+    margin-left: 55%;
+  } */
+  
+  /* Hover Animation */
+  /* .section:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.4s ease;
+  } */
+  
+  /* Text */
+  /* .section h2 {
+    margin-bottom: 10px;
+  } */
+  
+  /* .section p {
+    opacity: 0.8;
+  } */
+  
+  /* ------------------------------------------- Glass effect ----------------------------------------------*/
+  
+  /* =========================
+     TIMELINE LINE
+  ========================= */
+  .line {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-50%);
+  }
+  
+  /* Animated fill */
+  .line-fill {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, #00f2fe, #4facfe);
+    transition: height 0.2s linear;
+  }
+  
+  /* =========================
+     SECTIONS
+  ========================= */
+  .section {
+    width: 42%; /* 🔥 reduced from 45% */
+    padding: 25px;
+    margin: 50px 0;
+    border-radius: 15px;
+    position: relative;
+  
+    box-sizing: border-box; /* 🔥 important */
+  
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  /* =========================
+     LEFT / RIGHT ALIGNMENT
+  ========================= */
+  .section:nth-child(odd) {
+    margin-left: 0;
+  }
+  
+  .section:nth-child(even) {
+    margin-left: 58%; /* 🔥 adjusted from 55% */
+  }
+  
+  /* =========================
+     HOVER EFFECT (UNCHANGED)
+  ========================= */
+  .section:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.4s ease;
+  }
+  
+  /* =========================
+     TEXT
+  ========================= */
+  .section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    opacity: 0.8;
+  }
+  
+  /* =========================
+     TIMELINE WRAPPER SAFETY
+  ========================= */
+  .timeline {
+    position: relative;
+    overflow: hidden; /* 🔥 prevents right gap */
+  }
+  
+  /* =========================
+     MOBILE FIX (VERY IMPORTANT)
+  ========================= */
+  @media (max-width: 768px) {
+  
+    .line {
+      left: 20px;      /* line side me */
+      transform: none;
+    }
+  
+    .section {
+      width: 100%;
+      margin-left: 0 !important;  /* 🔥 reset */
+      padding: 15px;
+    }
+  
+  }
+  
+  /* =========================
+     ULTRA SMALL DEVICES
+  ========================= */
+  @media (max-width: 320px) {
+    .section {
+      padding: 10px;
+    }
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  
+  
+  /* --------------------------------------------- Footer --------------------------------------------*/
+  .footer {
+    text-align: center;
+    /* padding: 20px; */
+    opacity: 0.7;
+  }
+  
+  /* ----------------------------------------- Contact page Icon ----------------------------------- */
+  
+  /* SOCIAL ICON BASE */
+  
+  .social-icons-vertical a {
+    width: 42px;
+    height: 42px;
+    background: #f1f3f5;
+    border-radius: 50%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+  
+    transition: all 0.3s ease;
+  }
+  
+  /* HOVER */
+  .social-icons-vertical a:hover {
+    transform: translateX(4px); /* thoda reduce */
+    color: #fff;
+  }
+  
+  /* BRAND COLORS */
+  .social-icons-vertical a:nth-child(1):hover { background: #1877f2; }
+  .social-icons-vertical a:nth-child(2):hover { background: #e4405f; }
+  .social-icons-vertical a:nth-child(3):hover { background: #25d366; }
+  .social-icons-vertical a:nth-child(4):hover { background: #0a66c2; }
+  .social-icons-vertical a:nth-child(5):hover { background: #ff0000; }
+  
+  /* 🔥 SMALL SCREEN FIX */
+  @media (max-width: 320px) {
+    .social-icons-vertical a {
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+    }
+  
+    .social-icons-vertical a:hover {
+      transform: none; /* no push on tiny screens */
+    }
+  }
+  
+  /* ------------------------------------- Our-Gallery Images style ------------------------------------- */
+  
+  .gallery-img {
+    width: 100%;
+    /* height: 200px; */
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    transition: ease-in 0.3s;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* --------------------------------------------  Join-Us -------------------------------------------------   */
+  
+  .custom-img {
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+  
+  /* --------------------------------- Animation for the text and the image --------------------------- */
+  
+  
+  /* Scoped animation */
+  /* .about-content .fade-slide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  } */
+  
+  /* Visible state */
+  /* .about-content .fade-slide.show {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+  
+  /* Optional stagger (premium feel) */
+  /* .about-content .fade-slide:nth-child(1) {
+    transition-delay: 0.5s;
+  }
+  
+  .about-content .fade-slide:nth-child(2) {
+    transition-delay: 0.4s;
+  } */
+  
+  
+  
+  
+  /* Animation for the text like left right and this is global css anywhere we can use for smooth animation */
+  
+  /* =========================
+     BASE
+  ========================= */
+  /* BASE */
+  /* .animate {
+    opacity: 0;
+    transition: all 0.7s ease;
+    will-change: transform, opacity;
+  } */
+  
+  /* TYPES */
+  /* .animate-left {
+    transform: translateX(-60px);
+  }
+  
+  .animate-right {
+    transform: translateX(60px);
+  }
+  
+  .animate-up {
+    transform: translateY(40px);
+  }
+  
+  .animate-zoom {
+    transform: scale(0.95);
+  } */
+  
+  /* SHOW (FIXED) */
+  /* .animate.show {
+    opacity: 1;
+    transform: none; */
+    /* 🔥 IMPORTANT FIX */
+  /* } */
+  
+  /* DELAYS */
+  /* .delay-1 {
+    transition-delay: 0.1s;
+  }
+  
+  .delay-2 {
+    transition-delay: 0.2s;
+  }
+  
+  .delay-3 {
+    transition-delay: 0.3s;
+  } */
+  
+  /* MOBILE SAFE */
+  /* @media (max-width: 576px) {
+  
+    .animate-left,
+    .animate-right {
+      transform: translateY(30px);
+    }
+  } */
+  
+  
+  
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
