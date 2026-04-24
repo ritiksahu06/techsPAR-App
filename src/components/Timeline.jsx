@@ -35,7 +35,15 @@ const Timeline = () => {
       <section className="container">
         <div className="timeline" style={{ position: 'relative' }}>
 
-          <div className="line" ref={lineRef} style={{ position: 'absolute', zIndex: 0 }}>
+          <div className="line" ref={lineRef} style={{ 
+            position: 'absolute', 
+            top: 0,
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '3px',
+            height: '100%',
+            zIndex: 0 
+          }}>
             <div className="line-fill" ref={fillRef}></div>
           </div>
 
