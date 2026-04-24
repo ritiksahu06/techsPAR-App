@@ -223,6 +223,21 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.line {
+  z-index: 1;
+}
+
+.line-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section {
+  z-index: 2;
+}
+
 /* --------------------------------------------- Footer --------------------------------------------*/
 .footer {
   text-align: center;

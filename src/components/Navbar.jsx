@@ -205,16 +205,16 @@ useEffect(() => {
             <li className="nav-item my-dropdown">
            
 
-<span
-  className={`nav-link ${openDropdown ? "active" : ""}`}
-  onClick={() => {
-    if (window.innerWidth < 992) {
-      setOpenDropdown(prev => !prev); // only mobile
-    }
-  }}
->
-  Our Services <span className="arrow"></span>
-</span>
+                       <span
+                             className={`nav-link ${openDropdown ? "active" : ""}`}
+                          onClick={() => {
+                            if (window.innerWidth < 992) {
+                               setOpenDropdown(prev => !prev); // only mobile
+                            }
+                      }}
+                       >
+                        Our Services <span className="arrow"></span>
+                       </span>
                   
 
               <ul className={`my-dropdown-menu ${openDropdown ? "show" : ""}`}>

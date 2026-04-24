@@ -133,6 +133,30 @@
   background: none !important;
 }
 
+/*  */
+/* 👉 ONLY desktop pe hover effect */
+@media (min-width: 992px) {
+  .my-dropdown-menu li a {
+    position: relative;
+  }
+
+  .my-dropdown-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffa620;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+  }
+
+  .my-dropdown-menu li a:hover::after {
+    width: 100%;
+  }
+}
+/*  */
+
 .my-dropdown-menu li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
