@@ -186,10 +186,10 @@ span {
 /* =========================
    TIMELINE WRAPPER SAFETY
 ========================= */
-.timeline {
+/* .timeline {
   position: relative;
-  overflow: hidden; /* 🔥 prevents right gap */
-}
+  overflow: hidden; 🔥 prevents right gap
+} */
 
 /* =========================
    MOBILE FIX (VERY IMPORTANT)
@@ -222,6 +222,10 @@ span {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+.timeline {
+  position: relative;
+  overflow: visible; /* 🔥 hidden hatao */
+}
 
 .line {
   z-index: 1;
@@ -235,6 +239,7 @@ span {
 }
 
 .section {
+  position: relative;
   z-index: 2;
 }
 
