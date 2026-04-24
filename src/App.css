@@ -379,7 +379,7 @@ html, body {
 ========================= */
 @media (max-width: 768px) {
   .line {
-    left: 20px;
+    left: 50%;
     transform: none;
     z-index: 1;
   }
