@@ -288,7 +288,6 @@ html, body {
 }
 
 
-
 /* =========================
    TIMELINE LINE
 ========================= */
@@ -323,6 +322,8 @@ html, body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   z-index: 2;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 /* =========================
@@ -361,7 +362,8 @@ html, body {
 .timeline {
   position: relative;
   overflow: hidden;
-  /* isolation: isolate; */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 /* =========================
@@ -387,8 +389,10 @@ html, body {
     margin-left: 0 !important;
     padding: 15px;
     z-index: 2;
-    backdrop-filter: blur(12px);           /* wapas lagao */
-    -webkit-backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(12px) !important;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
 }
 
