@@ -185,7 +185,7 @@ span {
 ========================= */
 @media (max-width: 768px) {
   .line {
-    left: 5px;
+    left: 20px;
     transform: none;
     z-index: 0;
   }
