@@ -196,6 +196,8 @@ span {
     padding: 15px;
     z-index: 1;
     /* isolation: isolate; */
+    backdrop-filter: none !important;           /* add karo */
+    -webkit-backdrop-filter: none !important;   /* add karo */
   }
 }
 
