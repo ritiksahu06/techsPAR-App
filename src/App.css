@@ -340,10 +340,10 @@ html, body {
 /* =========================
    HOVER EFFECT
 ========================= */
-.section:hover {
+/* .section:hover {
   transform: translateY(-10px) scale(1.02);
   transition: 0.4s ease;
-}
+} */
 
 /* =========================
    TEXT
