@@ -199,14 +199,14 @@ span {
   .line {
     left: 20px;      /* line side me */
     transform: none;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   .section {
     width: 100%;
     margin-left: 0 !important;  /* 🔥 reset */
     padding: 15px;
-    /* z-index: 1; */
+    z-index: 1;
   }
 
 }
