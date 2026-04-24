@@ -4,6 +4,8 @@ const Timeline = () => {
   const lineRef = useRef(null);
   const fillRef = useRef(null);
 
+  
+
   useEffect(() => {
     const handleScroll = () => {
       if (lineRef.current && fillRef.current) {
@@ -17,6 +19,7 @@ const Timeline = () => {
 
         fillRef.current.style.height = progress * 100 + "%";
       }
+
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -35,7 +38,7 @@ const Timeline = () => {
       <section className="container">
         <div className="timeline">
 
-          <div className="line" ref={lineRef}>
+        <div className="line" ref={lineRef}>
             <div className="line-fill" ref={fillRef}></div>
           </div>
 
@@ -74,7 +77,7 @@ const Timeline = () => {
             <p>Our expertise lies in delivering high-end and feature-rich eCommerce websites.
               We build scalable, secure, and user-friendly platforms that drive conversions and enhance the shopping experience.</p>
           </div>
-
+          
         </div>
       </section>
     </>

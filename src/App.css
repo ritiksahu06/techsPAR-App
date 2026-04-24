@@ -55,8 +55,6 @@ span {
 ========================= */
 .timeline {
   position: relative;
-  overflow: hidden;
-  isolation: isolate; /* fix: stacking context */
 }
 
 /* =========================
@@ -91,8 +89,7 @@ span {
   box-sizing: border-box;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  z-index: 2;        /* fix: line ke upar */
-  isolation: isolate; /* fix: backdrop-filter stacking context */
+  z-index: 1;  /* section ko 1 do */
 }
 
 .section:nth-child(odd) {
@@ -197,8 +194,8 @@ span {
     width: 100%;
     margin-left: 0 !important;
     padding: 15px;
-    z-index: 2;
-    isolation: isolate;
+    z-index: 1;
+    /* isolation: isolate; */
   }
 }
 
