@@ -1,52 +1,39 @@
 import React, { useEffect, useRef } from "react";
 
 const Timeline = () => {
-  const lineRef = useRef(null);
-  const fillRef = useRef(null);
+  const timelineRef = useRef(null);
 
   useEffect(() => {
+    const style = document.createElement('style');
+    document.head.appendChild(style);
+
     const handleScroll = () => {
-      if (lineRef.current && fillRef.current) {
-        const rect = lineRef.current.getBoundingClientRect();
+      if (timelineRef.current) {
+        const rect = timelineRef.current.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-
-        let progress =
-          (windowHeight - rect.top) / (rect.height + windowHeight);
-
+        let progress = (windowHeight - rect.top) / (rect.height + windowHeight);
         progress = Math.max(0, Math.min(1, progress));
-
-        fillRef.current.style.height = progress * 100 + "%";
+        style.textContent = `.timeline::after { height: ${progress * 100}%; }`;
       }
     };
 
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.head.removeChild(style);
+    };
   }, []);
 
   return (
     <>
       <section className="hero">
-        <p data-aos="fade-up" data-aos-delay="200">
-          Our Services
-        </p>
-        <h1 data-aos="fade-up">We Provide Better Services</h1>
+        <p>Our Services</p>
+        <h1>We Provide Better Services</h1>
       </section>
 
       <section className="container">
-        <div className="timeline" style={{ position: 'relative' }}>
-
-          <div className="line" ref={lineRef} style={{ 
-            position: 'absolute', 
-            top: 0,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '3px',
-            height: '100%',
-            zIndex: 0 
-          }}>
-            <div className="line-fill" ref={fillRef}></div>
-          </div>
+        <div className="timeline" ref={timelineRef}>
 
           <div className="section glass border" style={{ position: 'relative', zIndex: 2 }}>
             <h2>Software Solution</h2>

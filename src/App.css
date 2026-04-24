@@ -218,3 +218,46 @@ span {
     transform: none;
   }
 }
+
+
+
+
+
+
+
+
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  width: 3px;
+  height: 0%;
+  background: linear-gradient(to bottom, #00f2fe, #4facfe);
+  transition: height 0.2s linear;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline::before,
+  .timeline::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
