@@ -9,6 +9,8 @@ import Navbar from "../components/Navbar";
 import AboutPage from "./AboutPage";
 import ContentSection from "../components/ContentSection";
 import MissionSection from "../components/MissionSection";
+import CredentialsShowcase from "../components/CredentialsShowcase";
+import LogoMover from "../components/LogoMover";
 
 const HomePage = () => {
 
@@ -26,6 +28,7 @@ const HomePage = () => {
       <Hero />
       <Timeline />
       <ContentSection /> 
+      <LogoMover />
       <MissionSection />
     </>
   );

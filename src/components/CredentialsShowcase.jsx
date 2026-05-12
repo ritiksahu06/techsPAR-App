@@ -75,13 +75,13 @@ const CredentialsShowcase = () => {
                                 <div className="line"></div>
                             </div> */}
                             <div className="text-center mt-5 cred-box">
-                                <h4 className=" text-light">Valuable Clients of TechsPAR Solutions</h4>
+                                <h4 className=" text-dark">Valuable Clients of TechsPAR Solutions</h4>
                                 <div className="loader mx-auto mt-3"></div>
                             </div>
                         </div>
 
                         {/* RIGHT */}
-                        <div className="col-lg-6 text-white mt-4 mt-lg-0">
+                        <div className="col-lg-6  mt-4 mt-lg-0">
                             <p>
                                 Seamlessly manage integrated growth strategies and collaborative markets. Globally empower cost-effective information networks with a focus on sustainable engagement. Dynamically foster professional collaboration and idea-sharing without relying on rigid, principle-centered frameworks.
                             </p>

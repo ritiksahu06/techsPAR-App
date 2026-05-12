@@ -160,7 +160,7 @@ const Hero = () => {
         <SwiperSlide>
           <div className="slide">
             {/* <img src="/images/slide1.webp" alt="" /> */}
-            <img src="/images/slide-10.jpg" alt="" />
+            <img src="/images/slide-33.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">Committed to Delivering Client</p>
@@ -184,7 +184,7 @@ const Hero = () => {
         
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide2.webp" alt="" />
+            <img src="/images/slide-22.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">Seamless End-to-End Web</p>
@@ -208,7 +208,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide3.webp" alt="" />
+            <img src="/images/slide-11.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">We don’t just satisfy clients,</p>
