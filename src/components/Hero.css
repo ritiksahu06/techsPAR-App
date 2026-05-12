@@ -232,7 +232,7 @@
    SMALL TEXT (TOP LINE)
 ========================= */
 .small-text {
-  font-size: clamp(13px, 1.5vw, 16px);
+  font-size: clamp(45px, 1.5vw, 16px);
   margin-bottom: 16px;
   color: #f3aa3c;
   font-weight: 500;
@@ -256,6 +256,7 @@
 .main-text span {
   display: block;
   margin-bottom: 6px;
+  font-size: 20px;
 
   opacity: 0;
   transform: translateY(40px);

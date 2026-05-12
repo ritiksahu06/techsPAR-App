@@ -173,7 +173,7 @@ useEffect(() => {
       <div className="container-fluid">
 
         {/* Logo */}
-        <Link to="/" className="navbar-brand my-logo ">
+        <Link to="/" className="navbar-brand my-logo">
           <img src="/images/techspar_logo.webp"  alt="logo" />
         </Link>
 
@@ -246,7 +246,7 @@ useEffect(() => {
           </ul>
 
           {/* Right Contact */}
-          <div className="d-lg-flex mt-3 mt-lg-2" >
+          <div className="d-lg-flex mt-3 mt-lg-2 my-contact-wrap" >
             <Link to="/contact" className="contact-btn rounded-5 me-4" >Contact Us</Link>
           </div>
 

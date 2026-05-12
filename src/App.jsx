@@ -80,6 +80,7 @@ import Events from './pages/Events'
 import Ecommerce from './pages/Ecommerce'
 import ScrollToTop from './ScrollToTop'
 import UseScrollAnimation from './components/UseScrollAnimation'
+import MouseFollower from './components/MouseFollower'
 
 // ✅ Alag inner component — BrowserRouter ke andar render hoga
 function AppContent() {
@@ -88,6 +89,7 @@ function AppContent() {
   return (
     <>
       <ScrollToTop />
+      <MouseFollower />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

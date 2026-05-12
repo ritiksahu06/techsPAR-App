@@ -20,7 +20,7 @@ const Footer = () => {
                 <span className="blue">PAR</span>
               </h4>
               <p>
-                TechsPAR delivers innovative software, digital marketing, and mobile
+                techsPAR delivers innovative software, digital marketing, and mobile
                 app solutions to grow your business.
               </p>
             </div>

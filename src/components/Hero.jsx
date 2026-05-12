@@ -187,8 +187,8 @@ const Hero = () => {
               </p>
 
               <h1 className="main-text">
-                <span>End-to-End Design &</span>
-                <span>Development Process</span>
+                <span>End-to-End Design & Development Process</span>
+                {/* <span>Development Process</span> */}
               </h1>
             </div>
           </div>
@@ -206,8 +206,8 @@ const Hero = () => {
               </p>
 
               <h1 className="main-text">
-                <span>We’re Passionate</span>
-                <span>about What We Do</span>
+                <span>We’re Passionate about What We Do</span>
+                {/* <span>about What We Do</span> */}
               </h1>
             </div>
           </div>
@@ -224,8 +224,8 @@ const Hero = () => {
 
 
               <h1 className="main-text">
-                <span>Satisfying Clients</span>
-                <span>isn’t a thing we do</span>
+                <span>Satisfying Clients isn’t a thing we do</span>
+                {/* <span>isn’t a thing we do</span> */}
               </h1>
             </div>
           </div>

@@ -101,7 +101,7 @@ export default function MissionSection() {
 
         return (
           <div
-            className={`col-md-4 ${item.animation} delay-${i + 1}`} // ✅ animation yahan
+            className={`col-md-4 ${item.animation} delay-${i + 1}`} //  animation yahan
             key={i}
           >
             <div className={`card custom-card ${isOpen ? "expanded" : ""} text-center p-4 border-0 shadow-lg`}>

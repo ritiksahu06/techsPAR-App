@@ -220,13 +220,13 @@ const ContentSection = () => {
         {/* TEXT */}
         <div className="col-12 col-lg-6 ps-lg-5 text-center text-lg-start">
 
-          <h3 className="pink mb-2 animate-right delay-1">About Us</h3>
-          <h2 className="fw-bold mb-3 animate-right delay-2">Company Profile</h2>
+          <h3 className=" mb-2 animate-right delay-1">About Us</h3>
+          <h2 className=" mb-3 animate-right delay-2">Company Profile</h2>
 
           <div className="loader mb-3 mx-lg-0 mx-auto"></div>
 
           <p className="animate-up delay-2">
-            TechsPAR Solutions is a New Delhi–based company with a vision to
+            techsPAR Solutions is a New Delhi–based company with a vision to
             build long-term relationships while delivering high-quality services.
           </p>
 

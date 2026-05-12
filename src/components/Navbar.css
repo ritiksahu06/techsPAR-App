@@ -223,6 +223,23 @@
   transform: scale(1.05);
 }
 
+
+
+/* Large Screens my-logo image*/
+@media (min-width: 1400px) {
+  .my-logo {
+    margin-left: 100px;
+  }
+}
+
+/* Large Screens contact us button*/
+@media (min-width: 1400px) {
+  .my-contact-wrap {
+    margin-right: 100px;
+  }
+}
+
+
 /* =========================================
    MOBILE (max 991px)
 ========================================= */
