@@ -187,8 +187,9 @@ const Hero = () => {
             <img src="/images/slide2.webp" alt="" />
 
             <div className="slide-content">
-              <p className="small-text">Seamless End-to-End Web Design & Development</p>
-              <p className="small-text">We don’t just satisfy</p>
+              <p className="small-text">Seamless End-to-End Web</p>
+              <p className="small-text">Design & Development</p>
+
 
               
             </div>
@@ -210,10 +211,12 @@ const Hero = () => {
             <img src="/images/slide3.webp" alt="" />
 
             <div className="slide-content">
-              <p className="small-text">clients, we exceed expectations</p>
-
+              <p className="small-text">We don’t just satisfy clients,</p>
+              <p className="small-text">we exceed expectations</p>
               
             </div>
+
+            
 
             {/* <div className="slide-content">
               <p className="small-text">
