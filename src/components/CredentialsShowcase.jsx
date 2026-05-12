@@ -48,16 +48,16 @@ import "./CredentialsShowcase.css";
 
 const CredentialsShowcase = () => {
     const images = [
-        "/images/our-credentials/bharat-mobility.png",
-        "/images/our-credentials/smart.png",
-        "/images/our-credentials/bharat-expo.png",
-        "/images/our-credentials/bsx-logo.png",
-        "/images/our-credentials/krishi-1.png",
-        "/images/our-credentials/i-auto.png",
-        "/images/our-credentials/imme-2.png",
-        "/images/our-credentials/wood.png",
-        "/images/our-credentials/accma.png",
-        "/images/our-credentials/pamex-24.png",
+        "/images/our-credentials/bharat-mobility.webp",
+        "/images/our-credentials/smart.webp",
+        "/images/our-credentials/bharat-expo.webp",
+        "/images/our-credentials/bsx-logo.webp",
+        "/images/our-credentials/krishi-1.webp",
+        "/images/our-credentials/i-auto.webp",
+        "/images/our-credentials/imme-2.webp",
+        "/images/our-credentials/wood.webp",
+        "/images/our-credentials/accma.webp",
+        "/images/our-credentials/pamex-24.webp",
     ];
 
     return (

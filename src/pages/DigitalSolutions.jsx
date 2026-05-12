@@ -8,7 +8,7 @@ const DigitalSolutions = () => {
 
             <Banner
                 title='Digital Solutions'
-                image='/images/our-services/digital-solutions/digital-solution-banner.jpg'
+                image='/images/our-services/digital-solutions/digital-solution-banner.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "Digital Solutions" }
@@ -59,7 +59,7 @@ const DigitalSolutions = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/digital-solutions/website-marketing.jpg"
+                            src="/images/our-services/digital-solutions/website-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -74,7 +74,7 @@ const DigitalSolutions = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/digital-solutions/seo.jpg"
+                            src="/images/our-services/digital-solutions/seo.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -115,7 +115,7 @@ const DigitalSolutions = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/digital-solutions/serarch-engine-marketing.jpg"
+                            src="/images/our-services/digital-solutions/serarch-engine-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -138,7 +138,7 @@ const DigitalSolutions = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/digital-solutions/social-media-marketing.jpg"
+                            src="/images/our-services/digital-solutions/social-media-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -185,7 +185,7 @@ const DigitalSolutions = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/digital-solutions/paid-advertisement.jpg"
+                            src="/images/our-services/digital-solutions/paid-advertisement.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -207,7 +207,7 @@ const DigitalSolutions = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/digital-solutions/content-marketing.jpg"
+                            src="/images/our-services/digital-solutions/content-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -253,7 +253,7 @@ const DigitalSolutions = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/digital-solutions/video-marketing.jpg"
+                            src="/images/our-services/digital-solutions/video-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -271,7 +271,7 @@ const DigitalSolutions = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/digital-solutions/email-marketing.jpg"
+                            src="/images/our-services/digital-solutions/email-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -315,7 +315,7 @@ const DigitalSolutions = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/digital-solutions/sms-marketing.jpg"
+                            src="/images/our-services/digital-solutions/sms-marketing.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}

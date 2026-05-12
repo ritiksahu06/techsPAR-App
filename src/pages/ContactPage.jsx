@@ -3,15 +3,12 @@
 
 // const ContactPage = () => {
 
-
-
 //   let [formData, setFormData] = useState({
 //     name: "",
 //     email: "",
 //     subject: "",
 //     message: ""
 //   });
-
 
 //   const handleSubmit = (e) => {
 //     e.preventDefault()
@@ -119,9 +116,6 @@
 
 //             </div>
 
-
-
-
 //           </div>
 
 //           <div className="map-container">
@@ -152,17 +146,15 @@
 
 // export default ContactPage;
 
-
 import { useState } from "react";
 import Banner from "../components/Banner";
 
 const ContactPage = () => {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e) => {
@@ -173,7 +165,7 @@ const ContactPage = () => {
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     });
   };
 
@@ -182,15 +174,11 @@ const ContactPage = () => {
       {/* Banner */}
       <Banner
         title="Contact Us"
-        image="./images/contact-us-banner.png"
-        breadcrumb={[
-          { name: "Home", link: "/" },
-          { name: "Contact Us" }
-        ]}
+        image="./images/contact-us-banner.webp"
+        breadcrumb={[{ name: "Home", link: "/" }, { name: "Contact Us" }]}
       />
 
       <div className="contact-section container-lg py-5">
-
         {/* Heading */}
         <div className="text-center mb-3">
           <h2 className="fw-bold">Contact Us</h2>
@@ -198,62 +186,83 @@ const ContactPage = () => {
         </div>
 
         <div className="row g-3">
-
           {/* 🔥 LEFT SIDE (SOCIAL + CONTACT SIDE BY SIDE ALWAYS) */}
           <div className="col-12 col-lg-5">
             <div className="row g-2 align-items-stretch">
-
               {/* SOCIAL ICONS */}
               <div className="col-5 social-wrapper d-flex justify-content-center p-2 p-md-4">
                 <div className="social-icons-vertical d-flex flex-column">
-                  <a href="#" className="mt-2" target="_blank"><i className="bi bi-facebook"></i></a>
-                  <a href="#" className="mt-2" target="_blank"><i className="bi bi-instagram"></i></a>
-                  <a href="#" className="mt-2" target="_blank"><i className="bi bi-whatsapp"></i></a>
-                  <a href="#" className="mt-2" target="_blank"><i className="bi bi-linkedin"></i></a>
-                  <a href="#" className="mt-2" target="_blank"><i className="bi bi-youtube"></i></a>
+                  <a href="#" className="mt-2" target="_blank">
+                    <i className="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" className="mt-2" target="_blank">
+                    <i className="bi bi-instagram"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/9871455398?text=Hello%20Techspar,%20I%20want%20to%20know%20more%20about%20your%20services."
+                    className="mt-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="bi bi-whatsapp"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/techspar-solutions/posts/?feedView=all"
+                    className="mt-2"
+                    target="_blank"
+                  >
+                    <i className="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" className="mt-2" target="_blank">
+                    <i className="bi bi-youtube"></i>
+                  </a>
                 </div>
               </div>
 
               {/* CONTACT INFO */}
               <div className="col-7">
                 <div className="contact-card p-2 p-md-4 h-100 d-flex flex-column justify-content-between">
-
                   <div>
                     <h5>Contact Information</h5>
 
-                    <p><strong>📍 Address:</strong><br />
-                      506 Suneja Tower - I, District Center Janakpuri, New Delhi- 110058, INDIA
+                    <p>
+                      <strong>📍 Address:</strong>
+                      <br />
+                      506 Suneja Tower - I, District Center Janakpuri, New
+                      Delhi- 110058, INDIA
                     </p>
 
-                    <p><strong>📞 Phone:</strong><br />
-                      +91 9876543210
+                    <p>
+                      <strong>📞 Phone:</strong>
+                      <br />
+                      +91 9871455398
                     </p>
 
-                    <p><strong>📧 Email:</strong><br />
-                      info@techspar.com
+                    <p>
+                      <strong>📧 Email:</strong>
+                      <br />
+                      parihar.ms@techspar.in
                     </p>
                   </div>
-
                 </div>
               </div>
-
             </div>
           </div>
 
           {/* RIGHT SIDE FORM */}
           <div className="col-12 col-lg-7">
             <div className="contact-card p-3 p-md-4">
-
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
-
                   <div className="col-md-6">
                     <label>Name*</label>
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="form-control border border-primary"
                       placeholder="Your Name"
                       required
@@ -266,7 +275,9 @@ const ContactPage = () => {
                       type="email"
                       name="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       className="form-control border-primary"
                       placeholder="Your Email"
                       required
@@ -279,7 +290,9 @@ const ContactPage = () => {
                       type="text"
                       name="subject"
                       value={formData.subject}
-                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, subject: e.target.value })
+                      }
                       className="form-control border-primary"
                       placeholder="Subject"
                     />
@@ -290,7 +303,9 @@ const ContactPage = () => {
                     <textarea
                       name="message"
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       className="form-control border-primary"
                       rows="3"
                       placeholder="Your Message"
@@ -302,10 +317,8 @@ const ContactPage = () => {
                       Send Message
                     </button>
                   </div>
-
                 </div>
               </form>
-
             </div>
           </div>
 
@@ -322,7 +335,6 @@ const ContactPage = () => {
               ></iframe>
             </div>
           </div>
-
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Ecommerce = () => {
 
             <Banner
                 title='E-Commerce Development'
-                image='/images/e-commerce-developement/e-commerce-developement-banner.jpg'
+                image='/images/e-commerce-developement/premium_photo-1684785617500-fb22234eeedd.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "E-Commerce Development" }
@@ -100,7 +100,7 @@ const Ecommerce = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6">
                         <div className="text-center mb-3">
-                            <h2 className="fw-bold">User-Friendly Shopping Experience</h2>
+                            <h2 className="fw-bold ">User-Friendly Shopping Experience</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
@@ -113,7 +113,7 @@ const Ecommerce = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/e-commerce-developement/user-friendly-shopping-experience.jpg"
+                            src="/images/e-commerce-developement/e-commerce-development.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -128,7 +128,7 @@ const Ecommerce = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/e-commerce-developement/secure-payment-integration.jpg"
+                            src="/images/e-commerce-developement/premium_photo-1739995619661-98536ed91c36.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -168,7 +168,8 @@ const Ecommerce = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/e-commerce-developement/product-inventory-management.jpg"
+                            src="/images/e-commerce-developement/Gemini_Generated_Image_a6jpv4a6jpv4a6jp.webp
+                            "
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}

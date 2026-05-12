@@ -65,8 +65,8 @@
    < > ARROWS
 ========================= */
 
-/* 🔥 FIX: properly remove default arrows */
-/* 🔥 Completely remove Swiper default arrow */
+/*  FIX: properly remove default arrows */
+/*  Completely remove Swiper default arrow */
 /* Remove default */
 /* =========================
    REMOVE DEFAULT ICON
@@ -102,7 +102,7 @@
 ========================= */
 .my-swiper .swiper-button-prev::before,
 .my-swiper .swiper-button-next::before {
-  font-size: clamp(28px, 4vw, 60px); /* 🔥 responsive size */
+  font-size: clamp(28px, 4vw, 60px); /*  responsive size */
   color: rgba(255, 255, 255, 0.8);
   font-weight: 200;
   transition: all 0.3s ease;
@@ -193,8 +193,8 @@
 .slide-content {
   position: absolute;
 
-  left: clamp(16px, 6vw, 100px);  /* 🔥 responsive left spacing */
-  right: 16px;                    /* 🔥 prevents overflow */
+  left: clamp(16px, 6vw, 100px);  /*  responsive left spacing */
+  right: 16px;                    /*  prevents overflow */
 
   max-width: 550px;
   width: 100%;
@@ -202,7 +202,7 @@
   z-index: 10;
   color: #fff;
 
-  text-align: left;               /* 🔥 always left */
+  text-align: left;               /*  always left */
 }
 
 
@@ -260,8 +260,8 @@
   opacity: 0;
   transform: translateY(40px);
 
-  letter-spacing: 1px;     /* 🔥 words ke beech halka space */
-  word-spacing: 3px;       /* 🔥 words ke beech gap */
+  letter-spacing: 1px;     /*  words ke beech halka space */
+  word-spacing: 3px;       /*  words ke beech gap */
 }
 
 .main-text span:last-child {

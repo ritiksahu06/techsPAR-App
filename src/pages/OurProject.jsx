@@ -6,26 +6,26 @@ import ImageModal from '../components/ImageModal';
 const OurProject = () => {
 
   const images = [
-    "/images/our-projects/Auto-Expo Component-2023.png",
-    "/images/our-projects/Bengaluru-Space Expo-2022.png",
-    "/images/our-projects/DOPS.png",
-    "/images/our-projects/futuretech.png",
-    "/images/our-projects/gaming4good.in.png",
-    "/images/our-projects/hawkerston.png",
-    "/images/our-projects/iecs.png",
-    "/images/our-projects/industrialdealing.png",
-    "/images/our-projects/INTERNATIONAL GAMING, ANIMATION AND INFOTAINMENT EVENT     INDIA GAMING SHOW 2023     HOME (1).png",
-    "/images/our-projects/International Space-Conference-Expo-2021.png",
-    "/images/our-projects/ireeindia.png",
-    "/images/our-projects/Kids-FitnessFestival.png",
-    "/images/our-projects/lightroniks.png",
+    "/images/our-projects/Auto-Expo Component-2023.webp",
+    "/images/our-projects/Bengaluru-Space Expo-2022.webp",
+    "/images/our-projects/DOPS.webp",
+    "/images/our-projects/futuretech.webp",
+    "/images/our-projects/gaming4good.in.webp",
+    "/images/our-projects/hawkerston.webp",
+    "/images/our-projects/iecs.webp",
+    "/images/our-projects/industrialdealing.webp",
+    "/images/our-projects/INTERNATIONAL GAMING, ANIMATION AND INFOTAINMENT EVENT     INDIA GAMING SHOW 2023     HOME (1).webp",
+    "/images/our-projects/International Space-Conference-Expo-2021.webp",
+    "/images/our-projects/ireeindia.webp",
+    "/images/our-projects/Kids-FitnessFestival.webp",
+    "/images/our-projects/lightroniks.webp",
   ];
 
   return (
     <div>
       <Banner
         title='Our Projects'
-        image='./images/our-gallery-banner.png'
+        image='./images/our-gallery-banner.webp'
         breadcrumb={[
           { name: "Home", link: "/" },
           { name: "Our Projects" }

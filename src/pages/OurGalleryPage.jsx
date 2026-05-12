@@ -52,7 +52,7 @@
 // export default OurGalleryPage;
 
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../components/Banner';
 
 const OurGalleryPage = () => {
@@ -60,25 +60,55 @@ const OurGalleryPage = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
-    "/images/our-gallery/1.jpeg",
-    "/images/our-gallery/2.jpeg",
-    "/images/our-gallery/3.jpeg",
-    "/images/our-gallery/4.jpeg",
-    "/images/our-gallery/5.jpeg",
-    "/images/our-gallery/6.jpeg",
-    "/images/our-gallery/7.png",
-    "/images/our-gallery/8.png",
-    "/images/our-gallery/9.png",
-    "/images/our-gallery/10.png",
+    "/images/our-gallery/1.webp",
+    "/images/our-gallery/2.webp",
+    "/images/our-gallery/3.webp",
+    "/images/our-gallery/4.webp",
+    "/images/our-gallery/5.webp",
+    "/images/our-gallery/6.webp",
+    "/images/our-gallery/7.webp",
+    "/images/our-gallery/8.webp",
+    "/images/our-gallery/9.webp",
+    "/images/our-gallery/10.webp",
   ];
 
+  useEffect(() => {
+
+    const images = document.querySelectorAll(".gallery-animate");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    images.forEach((img) => {
+      observer.observe(img);
+    });
+
+    return () => observer.disconnect();
+
+  }, []);
+
   return (
+
     <div className='bg-light'>
 
       {/* Banner */}
       <Banner
         title='Our Gallery'
-        image='./images/our-gallery-banner.png'
+        image='./images/our-gallery-banner.webp'
         breadcrumb={[
           { name: "Home", link: "/" },
           { name: "Gallery" }
@@ -87,30 +117,49 @@ const OurGalleryPage = () => {
 
       {/* Gallery */}
       <div className="container my-5">
-        <div className="row g-3">
+
+        <div className="text-center mb-5">
+          <h2 className="fw-bold section-title">
+            Our Gallery
+          </h2>
+        </div>
+
+        <div className="row g-4">
 
           {images.map((img, index) => (
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-              
-              <img
-                src={img}
-                alt="gallery"
-                className="img-fluid gallery-img shadow-lg rounded-2"
-                style={{
-                  height: "220px",
-                  width: "100%",
-                  objectFit: "cover",
-                  cursor: "pointer"
-                }}
-                data-bs-toggle="modal"
-                data-bs-target="#imageModal"
-                onClick={() => setSelectedImg(img)}
-              />
+
+            <div
+              className="col-12 col-sm-6 col-md-4 col-lg-3"
+              key={index}
+            >
+
+              <div className="gallery-box">
+
+                <img
+                  src={img}
+                  alt={`gallery-${index}`}
+                  loading="lazy"
+                  className="img-fluid gallery-animate shadow-lg rounded-3"
+                  style={{
+                    height: "220px",
+                    width: "100%",
+                    objectFit: "cover",
+                    cursor: "pointer",
+                    transitionDelay: `${index * 0.1}s`
+                  }}
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  onClick={() => setSelectedImg(img)}
+                />
+
+              </div>
 
             </div>
+
           ))}
 
         </div>
+
       </div>
 
       {/* Modal */}
@@ -121,17 +170,21 @@ const OurGalleryPage = () => {
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered modal-lg">
+
           <div className="modal-content bg-transparent border-0">
 
             <div className="modal-header border-0">
+
               <button
                 type="button"
                 className="btn-close bg-white"
                 data-bs-dismiss="modal"
               ></button>
+
             </div>
 
             <div className="modal-body text-center">
+
               {selectedImg && (
                 <img
                   src={selectedImg}
@@ -139,9 +192,11 @@ const OurGalleryPage = () => {
                   className="img-fluid rounded"
                 />
               )}
+
             </div>
 
           </div>
+
         </div>
       </div>
 

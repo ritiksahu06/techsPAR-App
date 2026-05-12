@@ -10,7 +10,7 @@ const AboutPage = () => {
     <div className="about-page bg-body">
 
       {/* Banner Section */}
-      <Banner title='Our-credentials' image='./images/about-us-banner.png' breadcrumb={[
+      <Banner title='Our-credentials' image='./images/about-us-banner.webp' breadcrumb={[
         { name: "Home", link: "/" },
         { name: "About Us" }
       ]} />

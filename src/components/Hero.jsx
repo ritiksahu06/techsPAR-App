@@ -178,7 +178,8 @@ const Hero = () => {
 
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide1.jpg" alt="" />
+            {/* <img src="/images/slide1.webp" alt="" /> */}
+            <img src="/images/slide-10.jpg" alt="" />
 
             <div className="slide-content">
               <p className="small-text">
@@ -197,7 +198,7 @@ const Hero = () => {
 
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide2.jpg" alt="" />
+            <img src="/images/slide2.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">
@@ -214,7 +215,7 @@ const Hero = () => {
 
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide3.jpg" alt="" />
+            <img src="/images/slide3.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">

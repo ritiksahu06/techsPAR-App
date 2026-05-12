@@ -8,7 +8,7 @@ const WebSolutionsPage = () => {
 
             <Banner
                 title='Web Solutions'
-                image='/images/our-services/software-solution-banner.png'
+                image='/images/our-services/software-solution-banner.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "Web Solutions" }
@@ -42,7 +42,7 @@ const WebSolutionsPage = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/web-development.jpg"
+                            src="/images/our-services/web-development.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -67,7 +67,7 @@ const WebSolutionsPage = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/web-application.jpg"
+                            src="/images/our-services/web-application.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -118,7 +118,7 @@ const WebSolutionsPage = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/corporate-sites.jpg"
+                            src="/images/our-services/corporate-sites.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -138,7 +138,7 @@ const WebSolutionsPage = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/brand-product.jpg"
+                            src="/images/our-services/brand-product.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -238,7 +238,7 @@ const WebSolutionsPage = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/ngo-sites.jpg"
+                            src="/images/our-services/ngo-sites.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -308,7 +308,7 @@ const WebSolutionsPage = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/our-services/website-maintenance.jpg"
+                            src="/images/our-services/website-maintenance.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
@@ -422,7 +422,7 @@ const WebSolutionsPage = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/our-services/web-hosting&domain.jpg"
+                            src="/images/our-services/web-hosting&domain.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                         />

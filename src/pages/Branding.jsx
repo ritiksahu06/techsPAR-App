@@ -8,7 +8,7 @@ const Branding = () => {
 
             <Banner
                 title='BRANDING & PRINTING'
-                image='/images/branding-printing/printing-banner.png'
+                image='/images/branding-printing/printing-banner.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "BRANDING & PRINTING" }
@@ -57,7 +57,7 @@ const Branding = () => {
                     <div className="col-lg-6 animate-right">
                         <img
 
-                            src='/images/branding-printing/logo-design.jpg'
+                            src='/images/branding-printing/logo-design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -72,7 +72,7 @@ const Branding = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src='/images/branding-printing/Graphic Design.jpg'
+                            src='/images/branding-printing/Graphic Design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -179,7 +179,7 @@ const Branding = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src='/images/branding-printing/brochure-design.jpg'
+                            src='/images/branding-printing/brochure-design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -197,10 +197,10 @@ const Branding = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src='/images/branding-printing/poster-design.jpg'
+                            src='/images/branding-printing/poster-design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
-                            style={{ height: 350, width: "100%" }}
+                            // style={{ height: 350, width: "100%" }}
                         />
                     </div>
                     <div className="col-lg-6">
@@ -243,7 +243,7 @@ const Branding = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src='/images/branding-printing/stationery-design.jpg'
+                            src='/images/branding-printing/stationery-design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -261,7 +261,7 @@ const Branding = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6 animate-left">
                         <img
-                            src='/images/branding-printing/business-card.jpg'
+                            src='/images/branding-printing/business-card.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}
@@ -307,7 +307,7 @@ const Branding = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src='/images/branding-printing/e-catalogue-design.jpg'
+                            src='/images/branding-printing/e-catalogue-design.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
                             style={{ height: 350, width: "100%" }}

@@ -174,7 +174,7 @@ useEffect(() => {
 
         {/* Logo */}
         <Link to="/" className="navbar-brand my-logo ">
-          <img src="/images/techspar_logo.png"  alt="logo" />
+          <img src="/images/techspar_logo.webp"  alt="logo" />
         </Link>
 
         {/* Toggle */}

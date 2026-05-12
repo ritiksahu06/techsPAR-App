@@ -56,7 +56,7 @@ const JoinUsPage = () => {
     return (
         <div>
             {/* Banner Section */}
-            <Banner title='Join Us' image='./images/join-us-banner.jpg' breadcrumb={[
+            <Banner title='Join Us' image='./images/join-us-banner.webp' breadcrumb={[
                 { name: "Home", link: "/" },
                 { name: "Join Us" }
             ]} />
@@ -75,7 +75,7 @@ const JoinUsPage = () => {
                     </div>
                     <div className="col-lg-6">
                         <img
-                            src={`./images/join-us.png`}
+                            src={`./images/join-us.webp`}
                             alt="gallery"
                             // style={{objectFit: 'cover'}}
                             className="img-fluid shadow-lg custom-img"
@@ -88,7 +88,7 @@ const JoinUsPage = () => {
 
                     <div className="col-lg-6">
                         <img
-                            src={`./images/innovate-with-us.png`}
+                            src={`./images/innovate-with-us.webp`}
                             alt="gallery"
                             // style={{objectFit: 'cover'}}
                             className="img-fluid shadow-lg custom-img"

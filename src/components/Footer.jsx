@@ -28,6 +28,7 @@ const Footer = () => {
             {/* Company */}
             <div className="col-6 col-md-3 col-lg-3">
               <h5>Serivces</h5>
+
               {/* <div className="d-flex justify-content-center mb-3"> */}
               <div className="d-flex justify-content-center justify-content-md-start mb-3">
                 <div className="loader " style={{ width: '80px' }}></div>

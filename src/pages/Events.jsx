@@ -9,7 +9,7 @@ const Events = () => {
 
             <Banner
                 title='Event Services'
-                image='/images/event-services/event-services-banner.jpg'
+                image='/images/event-services/event-services-banner.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "Event Services" }
@@ -28,25 +28,25 @@ const Events = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>At Techspar, we have extensive experience in managing services for events and exhibitions. With years of industry expertise, we have successfully delivered solutions for large-scale events, earning the trust and confidence of our clients.</p>
-                        <p>We provide complete end-to-end event solutions, starting from developing event websites with detailed information, schedules, and updates. Our services also include online registration for exhibitors, delegates, and visitors, along with on-site registration setup at the venue.</p>
-                        <p>From hardware, software, and design to manpower, stationery, data entry, and reporting—we handle every aspect to ensure smooth and efficient event operations.</p>
-                        <p>Keeping today’s dynamic environment in mind, we believe that “the show must go on.” Our goal is to deliver seamless execution and support at every stage of your event.</p>
+                        <p className='animate-right delay-1'>At Techspar, we have extensive experience in managing services for events and exhibitions. With years of industry expertise, we have successfully delivered solutions for large-scale events, earning the trust and confidence of our clients.</p>
+                        <p className='animate-right delay-2'>We provide complete end-to-end event solutions, starting from developing event websites with detailed information, schedules, and updates. Our services also include online registration for exhibitors, delegates, and visitors, along with on-site registration setup at the venue.</p>
+                        <p className='animate-right delay-3'>From hardware, software, and design to manpower, stationery, data entry, and reporting—we handle every aspect to ensure smooth and efficient event operations.</p>
+                        <p className='animate-right delay-4'>Keeping today’s dynamic environment in mind, we believe that “the show must go on.” Our goal is to deliver seamless execution and support at every stage of your event.</p>
 
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
 
                     <div className="container">
-                        <p>
+                        <p className='animate-right delay-5'>
                             Whether you are looking for a dynamic or static website, TechsPAR offers tailored solutions to meet your needs.
                         </p>
 
-                        <p>
+                        <p className='animate-right delay-6'>
                             Our team focuses on usability, maintenance, best practices, and SEO optimization to ensure your website performs effectively.
                         </p>
 
-                        <p>
+                        <p className='animate-right delay-7'>
                             We also provide web application development using PHP, helping businesses build scalable and cross-platform solutions.
                         </p>
                     </div>
@@ -62,9 +62,9 @@ const Events = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>We offer custom event website design services for exhibition and conference organizers, ensuring every element is tailored to meet specific event requirements.</p>
-                        <p>An event website serves as a central source of information for attendees, providing all the essential details in one place. It also acts as a cost-effective digital platform to promote your event and reach a wider audience.</p>
-                        <p>While creating an event website may seem simple, it is important to present information clearly and effectively. At Techspar, we focus on including all key details to ensure attendees are well-informed and prepared.</p>
+                        <p className='animate-left delay-1'>We offer custom event website design services for exhibition and conference organizers, ensuring every element is tailored to meet specific event requirements.</p>
+                        <p className='animate-left delay-2'>An event website serves as a central source of information for attendees, providing all the essential details in one place. It also acts as a cost-effective digital platform to promote your event and reach a wider audience.</p>
+                        <p className='animate-left delay-3'>While creating an event website may seem simple, it is important to present information clearly and effectively. At Techspar, we focus on including all key details to ensure attendees are well-informed and prepared.</p>
 
 
                     </div>
@@ -72,101 +72,100 @@ const Events = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src='/images/event-services/event-website.jpg'
+                            src='/images/event-services/event-website.webp'
                             alt="web"
                             className="img-fluid shadow-lg rounded"
-                            style={{ height: 350, width: "100%" }}
                         />
                     </div>
                     <div className="container">
 
                         <div className="job-list">
 
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-1">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Impactful landing page with Call to action
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-2">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Eye-catching visuals and videos
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-3">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Events photo and video gallery
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-4">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Company info and contact information
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-5">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Event schedules: date and time
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-6">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Venue location/ addresses
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-7">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Social media links
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-8">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     List of Key Attendees, Agendas, Sessions, Activities
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-9">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Exhibitor / Visitor Registration Form with confirmation email
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-10">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Testimonials of Your Exhibitors / Visitors
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-11">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Sponsor / Partner Logos
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-12">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     News and post-event updates
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-13">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Subscribe with us for mailing list
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-14">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     Ticket purchase and refund policy
                                 </span>
                             </p>
-                            <p className="d-flex align-items-start">
+                            <p className="d-flex align-items-start animate-left delay-15">
                                 <i className="bi bi-check-circle-fill text-primary me-2"></i>
                                 <span>
                                     FAQ Section
@@ -183,9 +182,9 @@ const Events = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src='/images/event-services/badges.jpg' alt="web"
+                            src='/images/event-services/badges.webp' alt="web"
                             className="img-fluid shadow-lg rounded"
-                            style={{ height: 350, width: "100%" }}
+                            // style={{ height: 350, width: "100%" }}
                         />
                     </div>
 
@@ -229,7 +228,7 @@ const Events = () => {
 
                     <div className="col-lg-6 animate-right">
                         <img
-                            src='/images/event-services/event-staffing.jpg' alt="web"
+                            src='/images/event-services/event-staffing.webp' alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
                     </div>
@@ -282,7 +281,7 @@ const Events = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src='/images/event-services/exhibitor-visitor-registration.jpg' alt="web"
+                            src='/images/event-services/exhibitor-visitor-registration.webp' alt="web"
                             className="img-fluid shadow-lg rounded"
                         />
                     </div>

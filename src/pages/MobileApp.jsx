@@ -8,7 +8,7 @@ const MobileApp = () => {
 
             <Banner
                 title='Mobile App Development'
-                image='/images/mobile-app-development/mobile-app-development-banner.jpg'
+                image='/images/mobile-app-development/mobile-app-development-banner.webp'
                 breadcrumb={[
                     { name: "Home", link: "/" },
                     { name: "Mobile App Development" }
@@ -54,10 +54,10 @@ const MobileApp = () => {
                     {/* RIGHT SIDE IMAGE */}
                     <div className="col-lg-6 animate-right">
                         <img
-                            src="/images/mobile-app-development/android-app-development.jpg"
+                            src="/images/mobile-app-development/android-app-development.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
-                            style={{ height: 350, width: "100%" }}
+                            // style={{ height: 350, width: "100%" }}
                         />
                     </div>
 
@@ -69,10 +69,10 @@ const MobileApp = () => {
 
                     <div className="col-lg-6 animate-left">
                         <img
-                            src="/images/mobile-app-development/ios-app-development.jpg"
+                            src="/images/mobile-app-development/ios-app-development.webp"
                             alt="web"
                             className="img-fluid shadow-lg rounded"
-                            style={{ height: 350, width: "100%" }}
+                            // style={{ height: 450, width: "100%" }}
                         />
                     </div>
 
