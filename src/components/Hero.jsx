@@ -40,7 +40,6 @@
 // //   return (
 // //     <>
 
-
 // // <Swiper
 // //   {...sliderOptions}
 // //   className="my-swiper"
@@ -56,14 +55,11 @@
 
 // //       </Swiper>
 
-
-
 // //     </>
 // //   );
 // // };
 
 // // export default Hero;
-
 
 // import React from "react";
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -133,20 +129,6 @@
 
 // export default Hero;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -175,49 +157,65 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <Swiper {...sliderOptions} className="my-swiper">
-
         <SwiperSlide>
           <div className="slide">
             {/* <img src="/images/slide1.webp" alt="" /> */}
             <img src="/images/slide-10.jpg" alt="" />
 
             <div className="slide-content">
+              <p className="small-text">Committed to Delivering Client</p>
+              <p className="small-text">Satisfaction Every Time</p>
+            </div>
+
+            {/* <div className="slide-content">
               <p className="small-text">
                 Believe in Client Satisfaction
               </p>
 
               <h1 className="main-text">
                 <span>End-to-End Design & Development Process</span>
-                {/* <span>Development Process</span> */}
+                <span>Development Process</span>
               </h1>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
-
         {/* COPY SAME FOR OTHER SLIDES */}
-
+         
+        
         <SwiperSlide>
           <div className="slide">
             <img src="/images/slide2.webp" alt="" />
 
             <div className="slide-content">
+              <p className="small-text">Seamless End-to-End Web Design & Development</p>
+              <p className="small-text">We don’t just satisfy</p>
+
+              
+            </div>
+
+            {/* <div className="slide-content">
               <p className="small-text">
                 Believe in Client Satisfaction
               </p>
 
               <h1 className="main-text">
                 <span>We’re Passionate about What We Do</span>
-                {/* <span>about What We Do</span> */}
+                <span>about What We Do</span>
               </h1>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="slide">
             <img src="/images/slide3.webp" alt="" />
 
             <div className="slide-content">
+              <p className="small-text">clients, we exceed expectations</p>
+
+              
+            </div>
+
+            {/* <div className="slide-content">
               <p className="small-text">
                 Believe in Client Satisfaction
               </p>
@@ -225,16 +223,14 @@ const Hero = () => {
 
               <h1 className="main-text">
                 <span>Satisfying Clients isn’t a thing we do</span>
-                {/* <span>isn’t a thing we do</span> */}
+                <span>isn’t a thing we do</span>
               </h1>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
-
       </Swiper>
     </div>
   );
 };
 
 export default Hero;
-

@@ -232,9 +232,10 @@
    SMALL TEXT (TOP LINE)
 ========================= */
 .small-text {
-  font-size: clamp(45px, 1.5vw, 16px);
+  font-size: clamp(25px, 1.5vw, 16px);
   margin-bottom: 16px;
-  color: #f3aa3c;
+  /* color: #f3aa3c; */
+  color: white;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
