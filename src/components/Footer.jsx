@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <p>Work : 506 Suneja Tower - I, District Center Janakpuri, New Delhi- 110058, INDIA.</p>
               <p>Reg. Add. : First Floor, GH-8/638, Paschim Vihar, New Delhi, West Delhi, Delhi, 110087</p>
-              <p>info@techspar.in</p>
+              <p>parihar.ms@techspar.in</p>
               <p>+91 - 98714 55398, 8076631662, 9811955077</p>
             </div>
 
