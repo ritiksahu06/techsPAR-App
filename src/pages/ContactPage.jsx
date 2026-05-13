@@ -228,27 +228,42 @@ const ContactPage = () => {
               <div className="col-7">
                 <div className="contact-card p-2 p-md-4 h-100 d-flex flex-column justify-content-between">
                   <div>
-                    <h5>Contact Information</h5>
 
-                    <p>
-                      <strong>📍 Address:</strong>
-                      <br />
-                      506 Suneja Tower - I, District Center Janakpuri, New
-                      Delhi- 110058, INDIA
-                    </p>
+  <h5 className="mb-4">Contact Information</h5>
 
-                    <p>
-                      <strong>📞 Phone:</strong>
-                      <br />
-                      +91 9871455398
-                    </p>
+  {/* Address */}
+  <p className="mb-3">
+    <strong>📍 Address:</strong>
+    <br />
+    506 Suneja Tower - I, District Center,
+    Janakpuri, New Delhi - 110058, India
+  </p>
 
-                    <p>
-                      <strong>📧 Email:</strong>
-                      <br />
-                      parihar.ms@techspar.in
-                    </p>
-                  </div>
+  {/* Phone */}
+  <p className="mb-3">
+    <strong>📞 Phone:</strong>
+    <br />
+    <a
+      href="tel:+919871455398"
+      className="text-decoration-none text-dark"
+    >
+      +91 9871455398
+    </a>
+  </p>
+
+  {/* Email */}
+  <p className="mb-0">
+    <strong>📧 Email:</strong>
+    <br />
+    <a
+      href="mailto:parihar.ms@techspar.in"
+      className="text-decoration-none text-dark"
+    >
+      parihar.ms@techspar.in
+    </a>
+  </p>
+
+</div>
                 </div>
               </div>
             </div>
