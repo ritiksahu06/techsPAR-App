@@ -195,7 +195,12 @@ const ContactPage = () => {
                   <a href="#" className="mt-2" target="_blank">
                     <i className="bi bi-facebook"></i>
                   </a>
-                  <a href="#" className="mt-2" target="_blank">
+                  <a
+                    href="https://instagram.com/techsparsolutions"
+                    className="mt-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="bi bi-instagram"></i>
                   </a>
                   <a

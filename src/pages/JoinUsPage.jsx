@@ -68,10 +68,10 @@ const JoinUsPage = () => {
                             <h2 className="fw-bold">Contact Us</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
-                        <p>Our employees share what makes TechsPAR a great place to work. Join us to innovate and grow.</p>
-                        <p>Discover why TechsPAR is a great place to work. Be part of exciting and impactful projects.</p>
-                        <p>Hear from our team about life at TechsPAR. Innovate, grow, and build amazing projects with us.</p>
-                        <p>At TechsPAR, we create, innovate, and grow together. Join us and make an impact.</p>
+                        <p>Our employees share what makes techsPAR a great place to work. Join us to innovate and grow.</p>
+                        <p>Discover why techsPAR is a great place to work. Be part of exciting and impactful projects.</p>
+                        <p>Hear from our team about life at techsPAR. Innovate, grow, and build amazing projects with us.</p>
+                        <p>At techsPAR, we create, innovate, and grow together. Join us and make an impact.</p>
                     </div>
                     <div className="col-lg-6">
                         <img
