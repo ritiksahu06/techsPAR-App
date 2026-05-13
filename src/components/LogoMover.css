@@ -14,9 +14,22 @@
   animation: scrollLogos 20s linear infinite;
 }
 
+.border-orange{
+  border: 1px solid #FF6E00;
+}
+
 .logo-item img {
   height: 70px;
   object-fit: contain;
+}
+
+
+.logo-item {
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+  transform: scale(1.75);
 }
 
 @keyframes scrollLogos {

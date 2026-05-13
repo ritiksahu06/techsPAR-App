@@ -41,69 +41,77 @@
 
 // export default CredentialsShowcase;
 
-
-
 import React from "react";
 import "./CredentialsShowcase.css";
 
 const CredentialsShowcase = () => {
-    const images = [
-        "/images/our-credentials/bharat-mobility.webp",
-        "/images/our-credentials/smart.webp",
-        "/images/our-credentials/bharat-expo.webp",
-        "/images/our-credentials/bsx-logo.webp",
-        "/images/our-credentials/krishi-1.webp",
-        "/images/our-credentials/i-auto.webp",
-        "/images/our-credentials/imme-2.webp",
-        "/images/our-credentials/wood.webp",
-        "/images/our-credentials/accma.webp",
-        "/images/our-credentials/pamex-24.webp",
-    ];
+  const images = [
+    "/images/our-credentials/bharat-mobility.webp",
+    "/images/our-credentials/smart.webp",
+    "/images/our-credentials/bharat-expo.webp",
+    "/images/our-credentials/bsx-logo.webp",
+    "/images/our-credentials/krishi-1.webp",
+    "/images/our-credentials/i-auto.webp",
+    "/images/our-credentials/imme-2.webp",
+    "/images/our-credentials/wood.webp",
+    "/images/our-credentials/accma.webp",
+    "/images/our-credentials/pamex-24.webp",
+  ];
 
-    return (
-        <section className="cred-section">
-
-            <div className="cred-overlay">
-                <div className="container">
-
-                    <div className="row align-items-center">
-
-                        {/* LEFT */}
-                        <div className="col-lg-6">
-                            {/* <div className="cred-box">
+  return (
+    <section className="cred-section">
+      <div className="cred-overlay">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* LEFT */}
+            <div className="col-lg-6">
+              {/* <div className="cred-box">
                                 <h3></h3>
                                 <div className="line"></div>
                             </div> */}
-                            <div className="text-center mt-5 cred-box">
-                                <h4 className=" text-dark">Valuable Clients of TechsPAR Solutions</h4>
-                                <div className="loader mx-auto mt-3"></div>
-                            </div>
-                        </div>
+              <div className="text-center mt-5 cred-box">
+                <h4 className=" text-dark">
+                  Valuable Clients of techsPAR Solutions
+                </h4>
+                <div className="loader mx-auto mt-3"></div>
+              </div>
+            </div>
 
-                        {/* RIGHT */}
-                        <div className="col-lg-6  mt-4 mt-lg-0">
-                            <p>
-                                Seamlessly manage integrated growth strategies and collaborative markets. Globally empower cost-effective information networks with a focus on sustainable engagement. Dynamically foster professional collaboration and idea-sharing without relying on rigid, principle-centered frameworks.
-                            </p>
-                        </div>
+            {/* RIGHT */}
+            <div className="col-lg-6  mt-4 mt-lg-0">
+              <p>
+                Seamlessly manage integrated growth strategies and collaborative
+                markets. Globally empower cost-effective information networks
+                with a focus on sustainable engagement. Dynamically foster
+                professional collaboration and idea-sharing without relying on
+                rigid, principle-centered frameworks.
+              </p>
+            </div>
+          </div>
 
-                    </div>
-
-                    {/* LOGO SLIDER */}
-                    {/* LOGO SLIDER */}
-                    <div className="logo-slider col-9 p-5 mx-auto">
+          {/* LOGO SLIDER */}
+          {/* LOGO SLIDER */}
+          {/* <div className="logo-slider col-9 p-5 mx-auto">
                         <div className="logo-track">
                             {[...images, ...images].map((img, i) => ( // ✅ double images — smooth loop
                                 <img src={img} key={i} alt="logo" className="img-fluid" />
                             ))}
                         </div>
-                    </div>
+                    </div> */}
 
+          <div className="logo-slider col-9 mx-auto">
+            <div className="logo-track">
+              {[...images, ...images].map((img, i) => (
+                <div className="logo-item" key={i}>
+                  <img src={img} alt="logo" className="img-fluid" />
                 </div>
+              ))}
             </div>
-
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default CredentialsShowcase;
