@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
 
-export default function Banner({
-  title,
-  image,
-  breadcrumb
-}) {
+export default function Banner({ title, image, breadcrumb }) {
   return (
     <div className="about-banner position-relative text-white mt-5">
-
       {/* Image */}
       <img
         src={image}
@@ -21,12 +16,10 @@ export default function Banner({
 
       {/* Text */}
       <div className="about-banner-text">
-        
         <div className="container">
+          <h1 className="animate-right">{title}</h1>
 
-          <h1>{title}</h1>
-
-          <p className="breadcrumb">
+          <p className="breadcrumb animate-right delay-1">
             {breadcrumb.map((item, i) => (
               <span key={i}>
                 {item.link ? (
@@ -39,9 +32,7 @@ export default function Banner({
               </span>
             ))}
           </p>
-
         </div>
-
       </div>
     </div>
   );

@@ -501,8 +501,12 @@ const OurCredentialsPage = () => {
           ]}
         />
 
+
+
+          <div className="loader mb-3 mx-lg-0 mx-auto"></div>
+
         <div className="text-center mt-5">
-          <h2 className="fw-bold">Events of techsPAR Solutions</h2>
+          <h2 className="fw-bold animate-right delay-1">Events of techsPAR Solutions</h2>
           <div className="loader mx-auto mt-3"></div>
         </div>
 

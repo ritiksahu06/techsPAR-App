@@ -33,7 +33,7 @@ const OurProject = () => {
       />
 
       <div className="text-center mt-5">
-        <h2 className="fw-bold animate">Our Projects</h2>
+        <h2 className="fw-bold animate-right">Our Projects</h2>
         <div className="loader mx-auto mt-3 animate-left"></div>
       </div>
 

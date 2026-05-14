@@ -97,71 +97,123 @@
 
 // ---------------------------------> Vercel optimize code for scroll animation <------------------------------------------
 
+// import { useEffect } from "react";
+// import { useLocation } from "react-router-dom";
+
+// const UseScrollAnimation = () => {
+//   const location = useLocation();
+
+//   useEffect(() => {
+//     let observer;
+//     let timeouts = [];
+
+//     const initObserver = () => {
+//       const elements = document.querySelectorAll(
+//         ".animate, .animate-left, .animate-right, .animate-up, .animate-zoom"
+//       );
+
+//       if (!elements.length) return;
+
+//       // ✅ Disconnect old observer pehle
+//       if (observer) observer.disconnect();
+
+//       // ✅ Reset sab elements
+//       elements.forEach((el) => {
+//         el.classList.remove("animated");
+//         el.style.opacity = "0"; // ✅ Force reset Vercel ke liye
+//       });
+
+//       observer = new IntersectionObserver(
+//         (entries) => {
+//           entries.forEach((entry) => {
+//             if (entry.isIntersecting) {
+//               // ✅ requestAnimationFrame — GPU smooth trigger
+//               requestAnimationFrame(() => {
+//                 entry.target.style.opacity = ""; // inline style hata do
+//                 entry.target.classList.add("animated");
+//               });
+//               observer.unobserve(entry.target);
+//             }
+//           });
+//         },
+//         {
+//           threshold: 0.08,           // ✅ Aur kam kiya — Vercel ke liye
+//           rootMargin: "0px 0px -10px 0px",
+//         }
+//       );
+
+//       elements.forEach((el) => observer.observe(el));
+//     };
+
+//     // ✅ Vercel production ke liye zyada timeouts
+//     timeouts.push(setTimeout(initObserver, 100));
+//     timeouts.push(setTimeout(initObserver, 500));
+//     timeouts.push(setTimeout(initObserver, 1000));
+//     timeouts.push(setTimeout(initObserver, 2000)); // ✅ Vercel slow load ke liye
+
+//     // ✅ Scroll event bhi add kiya — extra safety
+//     const onScroll = () => initObserver();
+//     window.addEventListener("scroll", onScroll, { once: true });
+
+//     return () => {
+//       timeouts.forEach(clearTimeout);
+//       window.removeEventListener("scroll", onScroll);
+//       if (observer) observer.disconnect();
+//     };
+
+//   }, [location.pathname]);
+// };
+
+// export default UseScrollAnimation;
+
+
+
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const UseScrollAnimation = () => {
+
   const location = useLocation();
 
   useEffect(() => {
-    let observer;
-    let timeouts = [];
 
-    const initObserver = () => {
-      const elements = document.querySelectorAll(
-        ".animate, .animate-left, .animate-right, .animate-up, .animate-zoom"
-      );
+    const elements = document.querySelectorAll(
+      ".animate, .animate-left, .animate-right, .animate-up, .animate-zoom"
+    );
 
-      if (!elements.length) return;
+    if (!elements.length) return;
 
-      // ✅ Disconnect old observer pehle
-      if (observer) observer.disconnect();
+    const observer = new IntersectionObserver(
+      (entries) => {
 
-      // ✅ Reset sab elements
-      elements.forEach((el) => {
-        el.classList.remove("animated");
-        el.style.opacity = "0"; // ✅ Force reset Vercel ke liye
-      });
+        entries.forEach((entry) => {
 
-      observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // ✅ requestAnimationFrame — GPU smooth trigger
-              requestAnimationFrame(() => {
-                entry.target.style.opacity = ""; // inline style hata do
-                entry.target.classList.add("animated");
-              });
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.08,           // ✅ Aur kam kiya — Vercel ke liye
-          rootMargin: "0px 0px -10px 0px",
-        }
-      );
+          if (entry.isIntersecting) {
 
-      elements.forEach((el) => observer.observe(el));
-    };
+            requestAnimationFrame(() => {
+              entry.target.classList.add("animated");
+            });
 
-    // ✅ Vercel production ke liye zyada timeouts
-    timeouts.push(setTimeout(initObserver, 100));
-    timeouts.push(setTimeout(initObserver, 500));
-    timeouts.push(setTimeout(initObserver, 1000));
-    timeouts.push(setTimeout(initObserver, 2000)); // ✅ Vercel slow load ke liye
+            // ✅ Animate only once
+            observer.unobserve(entry.target);
+          }
 
-    // ✅ Scroll event bhi add kiya — extra safety
-    const onScroll = () => initObserver();
-    window.addEventListener("scroll", onScroll, { once: true });
+        });
 
-    return () => {
-      timeouts.forEach(clearTimeout);
-      window.removeEventListener("scroll", onScroll);
-      if (observer) observer.disconnect();
-    };
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px",
+      }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
 
   }, [location.pathname]);
+
 };
 
 export default UseScrollAnimation;

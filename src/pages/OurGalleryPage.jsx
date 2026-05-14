@@ -15,7 +15,6 @@
 //         "/images/our-gallery/9.png",
 //         "/images/our-gallery/10.png",
 //       ];
-    
 
 //     return (
 //         <div className='bg-light'>
@@ -28,7 +27,7 @@
 //                     { name: "Gallery" }
 //                 ]}
 //             />
- 
+
 //             <div className="container my-5">
 //                 <div className="row g-2 ">
 
@@ -51,12 +50,10 @@
 
 // export default OurGalleryPage;
 
-
-import React, { useEffect, useState } from 'react';
-import Banner from '../components/Banner';
+import React, { useEffect, useState } from "react";
+import Banner from "../components/Banner";
 
 const OurGalleryPage = () => {
-
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
@@ -73,24 +70,19 @@ const OurGalleryPage = () => {
   ];
 
   useEffect(() => {
-
     const images = document.querySelectorAll(".gallery-animate");
 
     const observer = new IntersectionObserver(
       (entries) => {
-
         entries.forEach((entry) => {
-
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
           }
-
         });
-
       },
       {
         threshold: 0.2,
-      }
+      },
     );
 
     images.forEach((img) => {
@@ -98,43 +90,30 @@ const OurGalleryPage = () => {
     });
 
     return () => observer.disconnect();
-
   }, []);
 
   return (
-
-    <div className='bg-light'>
-
+    <div className="bg-light">
       {/* Banner */}
       <Banner
-        title='Our Gallery'
-        image='./images/our-gallery-banner.webp'
-        breadcrumb={[
-          { name: "Home", link: "/" },
-          { name: "Gallery" }
-        ]}
+        title="Our Gallery"
+        image="./images/our-gallery-banner.webp"
+        breadcrumb={[{ name: "Home", link: "/" }, { name: "Gallery" }]}
       />
 
       {/* Gallery */}
       <div className="container my-5">
-
+        
         <div className="text-center mb-5">
-          <h2 className="fw-bold section-title">
-            Our Gallery
-          </h2>
+          <h2 className="fw-bold animate-right section-title">Our Gallery</h2>
+        <div className="loader mx-auto mt-3"></div>
+
         </div>
 
         <div className="row g-4">
-
           {images.map((img, index) => (
-
-            <div
-              className="col-12 col-sm-6 col-md-4 col-lg-3"
-              key={index}
-            >
-
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
               <div className="gallery-box">
-
                 <img
                   src={img}
                   alt={`gallery-${index}`}
@@ -145,21 +124,16 @@ const OurGalleryPage = () => {
                     width: "100%",
                     objectFit: "cover",
                     cursor: "pointer",
-                    transitionDelay: `${index * 0.1}s`
+                    transitionDelay: `${index * 0.1}s`,
                   }}
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
                   onClick={() => setSelectedImg(img)}
                 />
-
               </div>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
 
       {/* Modal */}
@@ -170,21 +144,16 @@ const OurGalleryPage = () => {
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered modal-lg">
-
           <div className="modal-content bg-transparent border-0">
-
             <div className="modal-header border-0">
-
               <button
                 type="button"
                 className="btn-close bg-white"
                 data-bs-dismiss="modal"
               ></button>
-
             </div>
 
             <div className="modal-body text-center">
-
               {selectedImg && (
                 <img
                   src={selectedImg}
@@ -192,14 +161,10 @@ const OurGalleryPage = () => {
                   className="img-fluid rounded"
                 />
               )}
-
             </div>
-
           </div>
-
         </div>
       </div>
-
     </div>
   );
 };
