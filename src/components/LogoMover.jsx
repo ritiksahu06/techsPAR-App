@@ -3,6 +3,12 @@ import "./LogoMover.css";
 
 function LogoMover() {
   const images = [
+        "/images/our-credentials/pamex-2026.webp",
+    "/images/our-credentials/gamingshow-converted-from-jpeg.webp",
+    "/images/our-credentials/bsx-logo-removebg-preview-converted-from-png.webp",
+    "/images/our-credentials/CII-removebg-preview-converted-from-png.webp",
+    "/images/our-credentials/bharat-expo-2026-converted-from-jpeg.webp",
+    "/images/our-credentials/CII 25th-converted-from-jpeg.webp",
     "/images/our-credentials/bharat-mobility.webp",
     "/images/our-credentials/smart.webp",
     "/images/our-credentials/bharat-expo.webp",

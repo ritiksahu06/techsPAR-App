@@ -146,7 +146,7 @@ const JoinUsPage = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="form-control border border-primary"
+                                        className="form-control  orange-text"
                                         placeholder="Your Name"
                                         required
                                     />
@@ -160,7 +160,7 @@ const JoinUsPage = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="form-control border-primary"
+                                        className="form-control orange-text"
                                         placeholder="Your Email"
                                         required
                                     />
@@ -174,7 +174,7 @@ const JoinUsPage = () => {
                                         name="position"
                                         value={formData.position}
                                         onChange={handleChange}
-                                        className="form-control border border-primary"
+                                        className="form-control orange-text"
                                         placeholder="Position you are applying for"
                                         required
                                     />
@@ -187,7 +187,7 @@ const JoinUsPage = () => {
                                         type="file"
                                         name="cv"
                                         onChange={handleChange}
-                                        className="form-control border-primary"
+                                        className="form-control orange-text"
                                         accept=".pdf,.doc,.docx"
                                         required
                                     />
@@ -200,7 +200,7 @@ const JoinUsPage = () => {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        className="form-control border-primary"
+                                        className="form-control orange-text"
                                         rows="4"
                                         placeholder="Your Message"
                                     ></textarea>

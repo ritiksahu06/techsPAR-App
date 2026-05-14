@@ -421,6 +421,12 @@ import "./OurCredentialsPage.css";
 
 const OurCredentialsPage = () => {
   const images = [
+        "/images/our-credentials/pamex-2026.webp",
+    "/images/our-credentials/gamingshow-converted-from-jpeg.webp",
+    "/images/our-credentials/bsx-logo-removebg-preview-converted-from-png.webp",
+    "/images/our-credentials/CII-removebg-preview-converted-from-png.webp",
+    "/images/our-credentials/bharat-expo-2026-converted-from-jpeg.webp",
+    "/images/our-credentials/CII 25th-converted-from-jpeg.webp",
     "/images/our-credentials/bharat-mobility.webp",
     "/images/our-credentials/smart.webp",
     "/images/our-credentials/bharat-expo.webp",
@@ -504,23 +510,22 @@ const OurCredentialsPage = () => {
           <div className="row"></div>
 
           <div className="row mt-5">
-  {images.map((img, index) => (
-    <div
-      className="col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
-      key={index}
-    >
-      <div className="logo-box">
-        <img
-          src={img}
-          loading="lazy"
-          alt={`gallery-${index}`}
-          className="gallery-img img-fluid p-2 shadow-lg rounded-2"
-        />
-      </div>
-    </div>
-  ))}
-</div>
-
+            {images.map((img, index) => (
+              <div
+                className="col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                key={index}
+              >
+                <div className="logo-box">
+                  <img
+                    src={img}
+                    loading="lazy"
+                    alt={`gallery-${index}`}
+                    className="gallery-img img-fluid"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
           {/* <div className="row mt-5">
                     {images.map((img, index) => (
                         <div className="col-12 col-sm-6 col-md-4 col-lg-2" key={index}>
