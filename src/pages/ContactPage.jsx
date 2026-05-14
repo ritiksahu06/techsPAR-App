@@ -283,7 +283,7 @@ const ContactPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="form-control border border-primary"
+                      className="form-control  orange-text"
                       placeholder="Your Name"
                       required
                     />
@@ -298,7 +298,7 @@ const ContactPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="form-control border-primary"
+                      className="form-control  orange-text"
                       placeholder="Your Email"
                       required
                     />
@@ -313,7 +313,7 @@ const ContactPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, subject: e.target.value })
                       }
-                      className="form-control border-primary"
+                      className="form-control  orange-text"
                       placeholder="Subject"
                     />
                   </div>
@@ -326,7 +326,7 @@ const ContactPage = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="form-control border-primary"
+                      className="form-control  orange-text"
                       rows="3"
                       placeholder="Your Message"
                     ></textarea>
