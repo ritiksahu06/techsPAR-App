@@ -33,17 +33,19 @@ function LogoMover() {
     // </div>
 
     <div className="container">
-      <div className="logo-slider col-9 mx-auto border-orange rounded p-5">
-        <div>
-          <h1 className=" text-dark">Our Clients</h1>
-          <div className="loader mb-5"></div>
+          <div className="mt-5">
+            <h1 className=" text-dark">Our Clients</h1>
+          <div className="loader"></div>
+          </div>
+      <div className="logo-slider col-9 mx-auto border-orange rounded pb-5">
+
           <div className="logo-track m-2">
             {[...images, ...images].map((img, i) => (
               <div className="logo-item" key={i}>
                 <img src={img} alt={`logo-${i}`} className="img-fluid" />
               </div>
             ))}
-          </div>
+
         </div>
       </div>
     </div>

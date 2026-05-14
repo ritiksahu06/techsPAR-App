@@ -8,19 +8,20 @@ import "./AboutPage.css";
 const AboutPage = () => {
   return (
     <div className="about-page bg-body">
-
       {/* Banner Section */}
-      <Banner title='Our-credentials' image='./images/about-us-banner.webp' breadcrumb={[
-        { name: "Home", link: "/" },
-        { name: "About Us" }
-      ]} />
+      <Banner
+        title="Our-credentials"
+        image="./images/about-us-banner.webp"
+        breadcrumb={[{ name: "Home", link: "/" }, { name: "About Us" }]}
+      />
 
       {/* Content Section */}
-      <ContentSection />
+      <ContentSection isAboutPage={true} />
+
+      
 
       <div className="bg-lightgray pt-5">
         <div className="container-fluid about-content text-center">
-
           {/* Heading */}
           <h3 className="animate-up">Mission, Vision & Value</h3>
 
@@ -29,7 +30,7 @@ const AboutPage = () => {
 
           {/* Cards */}
           <div className="pb-5">
-          <MissionSection />
+            <MissionSection />
           </div>
         </div>
       </div>
@@ -38,9 +39,6 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-
-
 
 // import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
@@ -67,13 +65,13 @@ export default AboutPage;
 
 //       {/* Banner Section */}
 //       <div data-aos="fade-down">
-//         <Banner 
-//           title="Our-credentials" 
-//           image="./images/about-us-banner.png" 
+//         <Banner
+//           title="Our-credentials"
+//           image="./images/about-us-banner.png"
 //           breadcrumb={[
 //             { name: "Home", link: "/" },
 //             { name: "About Us" }
-//           ]} 
+//           ]}
 //         />
 //       </div>
 
@@ -90,7 +88,7 @@ export default AboutPage;
 //           <h3 data-aos="fade-up">Mission, Vision & Value</h3>
 
 //           {/* Loader */}
-//           <div 
+//           <div
 //             className="loader mb-2 mx-auto"
 //             data-aos="zoom-in"
 //             data-aos-delay="100"

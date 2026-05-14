@@ -86,7 +86,7 @@
   width: auto;
   height: auto;
 
-  background: none;   /* ❌ no circle */
+  background: none;   /*  no circle */
   border: none;
 
   display: flex;
@@ -163,7 +163,7 @@
 /* =========================
    OVERLAY (for better text visibility)
 ========================= */
-.slide::after {
+/* .slide::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -173,7 +173,7 @@
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.1)
   );
-}
+} */
 
 /* =========================
    TEXT CONTAINER
@@ -281,12 +281,33 @@
 /* =========================
    ANIMATION (only active slide)
 ========================= */
+.small-text {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
 .swiper-slide-active .small-text {
   animation: fadeUp 0.8s ease forwards;
 }
 
-.swiper-slide-active .main-text span {
-  animation: fadeUp 0.8s ease forwards;
+.swiper-slide-active .small-text:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.swiper-slide-active .small-text:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* line delays */

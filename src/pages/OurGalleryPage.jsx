@@ -60,7 +60,7 @@ const OurGalleryPage = () => {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
-    "/images/our-gallery/1.webp",
+    // "/images/our-gallery/1.webp",
     "/images/our-gallery/2.webp",
     "/images/our-gallery/3.webp",
     "/images/our-gallery/4.webp",

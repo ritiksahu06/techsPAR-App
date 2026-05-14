@@ -159,8 +159,32 @@ const Hero = () => {
       <Swiper {...sliderOptions} className="my-swiper">
         <SwiperSlide>
           <div className="slide">
+            {/* <img src="/images/slide-22.webp" alt="" /> */}
+            <img src="/images/slide-slide.webp" alt="" />
+
+            <div className="slide-content">
+              <p className="small-text">Seamless End-to-End Web</p>
+              <p className="small-text">Design & Development</p>
+            </div>
+
+            {/* <div className="slide-content">
+              <p className="small-text">
+                Believe in Client Satisfaction
+              </p>
+
+              <h1 className="main-text">
+                <span>We’re Passionate about What We Do</span>
+                <span>about What We Do</span>
+              </h1>
+            </div> */}
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="slide">
             {/* <img src="/images/slide1.webp" alt="" /> */}
-            <img src="/images/slide-33.webp" alt="" />
+            <img src="/images/realistic-objective-background_79603-1821.jpg" alt="" />
+            {/* <img src="/images/slide-slide.webp" alt="" /> */}
 
             <div className="slide-content">
               <p className="small-text">Committed to Delivering Client</p>
@@ -179,58 +203,25 @@ const Hero = () => {
             </div> */}
           </div>
         </SwiperSlide>
-        {/* COPY SAME FOR OTHER SLIDES */}
-         
-        
+
         <SwiperSlide>
           <div className="slide">
-            <img src="/images/slide-22.webp" alt="" />
-
-            <div className="slide-content">
-              <p className="small-text">Seamless End-to-End Web</p>
-              <p className="small-text">Design & Development</p>
-
-
-              
-            </div>
-
-            {/* <div className="slide-content">
-              <p className="small-text">
-                Believe in Client Satisfaction
-              </p>
-
-              <h1 className="main-text">
-                <span>We’re Passionate about What We Do</span>
-                <span>about What We Do</span>
-              </h1>
-            </div> */}
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide">
-            <img src="/images/slide-11.webp" alt="" />
+            {/* <img src="/images/slide-11.webp" alt="" /> */}
+            {/* <img src="/images/slide-slide-2.avif" alt="" /> */}
+            <img src="/images/slide-33.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">We don’t just satisfy clients,</p>
               <p className="small-text">we exceed expectations</p>
-              
             </div>
-
-            
-
-            {/* <div className="slide-content">
-              <p className="small-text">
-                Believe in Client Satisfaction
-              </p>
-
-
-              <h1 className="main-text">
-                <span>Satisfying Clients isn’t a thing we do</span>
-                <span>isn’t a thing we do</span>
-              </h1>
-            </div> */}
           </div>
         </SwiperSlide>
+
+        
+        
+
+        
+
       </Swiper>
     </div>
   );

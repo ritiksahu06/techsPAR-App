@@ -43,7 +43,7 @@ const OurProject = () => {
         <div className="row g-4 mt-4">
           {images.map((img, i) => (
             <div className="col-lg-4 col-md-6 col-12" key={i}>
-              <ImageModal img={img} />
+              <ImageModal img={img} id={i}/>
             </div>
           ))}
         </div>
