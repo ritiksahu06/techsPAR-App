@@ -218,9 +218,9 @@ const ContactPage = () => {
                   >
                     <i className="bi bi-linkedin"></i>
                   </a>
-                  <a href="#" className="mt-2" target="_blank">
+                  {/* <a href="#" className="mt-2" target="_blank">
                     <i className="bi bi-youtube"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
 

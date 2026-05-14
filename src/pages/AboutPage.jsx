@@ -20,13 +20,13 @@ const AboutPage = () => {
 
       
 
-      <div className="bg-lightgray pt-5">
+      <div className="bg-body pt-5">
         <div className="container-fluid about-content text-center">
           {/* Heading */}
-          <h3 className="animate-up">Mission, Vision & Value</h3>
+          {/* <h3 className="animate-up">Mission, Vision & Value</h3> */}
 
           {/* Loader */}
-          <div className="loader mb-2 mx-auto"></div>
+          {/* <div className="loader mb-2 mx-auto"></div> */}
 
           {/* Cards */}
           <div className="pb-5">
