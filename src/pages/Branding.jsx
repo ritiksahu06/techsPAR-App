@@ -27,8 +27,8 @@ const Branding = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>Techspar Solutions is a creative branding company focused on building strong brand identities and clear brand visions that help your product, service, or business stand out in a positive and impactful way.</p>
-                        <p>At Techspar, we offer a wide range of branding services, including design, printing, corporate gifting, and more. Our main goal is to effectively communicate the value and unique qualities of your brand. We believe in a complete and integrated approach to branding—creating not just a brand identity, but a strong and lasting brand presence.</p>
+                        <p>techspar Solutions is a creative branding company focused on building strong brand identities and clear brand visions that help your product, service, or business stand out in a positive and impactful way.</p>
+                        <p>At techspar, we offer a wide range of branding services, including design, printing, corporate gifting, and more. Our main goal is to effectively communicate the value and unique qualities of your brand. We believe in a complete and integrated approach to branding—creating not just a brand identity, but a strong and lasting brand presence.</p>
                         <p>Our strategies are designed to develop a distinctive name and image that stays in the minds of your target audience and builds a meaningful connection. We help shape a positive perception of your brand through consistent and engaging experiences.</p>
                         <p>We support your brand growth across both online and offline channels, ensuring consistency and cohesion. This unified approach helps your business stand out and connect effectively with your audience.</p>
 
@@ -46,7 +46,7 @@ const Branding = () => {
                             <h2 className="fw-bold">LOGO Design</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
-                        <p>Your logo plays a crucial role in creating the first impression of your business. It communicates important information about your brand and helps customers understand whether it aligns with their needs. At Techspar, we give special attention to logo design because it is a key element of your brand identity.</p>
+                        <p>Your logo plays a crucial role in creating the first impression of your business. It communicates important information about your brand and helps customers understand whether it aligns with their needs. At techspar, we give special attention to logo design because it is a key element of your brand identity.</p>
                         <p>As your logo appears across all branding materials—such as your website, packaging, and business cards—it must be impactful and professionally designed. A strong logo sets the tone for your brand’s image and reflects its personality, values, and identity.</p>
                         <p>A well-crafted logo not only represents what your business stands for but also helps you stand out from the competition. It leaves a lasting impression and plays a significant role in shaping how customers perceive your brand.</p>
 
@@ -86,7 +86,7 @@ const Branding = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>Our graphic design services help bring your vision to life while creating a strong and consistent brand image that stands out in a competitive market. At Techspar, our creative team combines design expertise with clear brand strategy, impactful messaging, and engaging visuals to make your business both visible and memorable.</p>
+                        <p>Our graphic design services help bring your vision to life while creating a strong and consistent brand image that stands out in a competitive market. At techspar, our creative team combines design expertise with clear brand strategy, impactful messaging, and engaging visuals to make your business both visible and memorable.</p>
                         <p>Whether it’s a logo, business card, website, or marketing materials, we focus on delivering designs that leave a lasting impression. We believe that great content works best when paired with visually appealing design, making your overall marketing more effective.</p>
                         <p>We work closely with you throughout the process to ensure every project is delivered on time, within budget, and aligned with your expectations.</p>
 
@@ -211,7 +211,7 @@ const Branding = () => {
                         </div>
 
                         <p>Posters are an effective way to communicate your message, with their visual appeal playing a key role in attracting attention. They have always remained popular in offline marketing due to their ability to quickly engage audiences.</p>
-                        <p>Whether you are launching a new product, promoting a service, or announcing an event, Techspar’s poster design services deliver creative and impactful results. Our high-quality poster designs serve as powerful and cost-effective marketing tools to help you spread your message effectively.</p>
+                        <p>Whether you are launching a new product, promoting a service, or announcing an event, techspar’s poster design services deliver creative and impactful results. Our high-quality poster designs serve as powerful and cost-effective marketing tools to help you spread your message effectively.</p>
 
                     </div>
 
@@ -276,7 +276,7 @@ const Branding = () => {
 
                         <p>We offer high-quality business card design services that help create a strong and professional first impression. A business card is often one of the first things people notice about your business, making it an essential part of your brand identity.</p>
                         <p>A business card is a compact, credit-card-sized printed card that includes key details such as your name, contact information, and brand logo. It serves as a convenient way to share your business information anytime, anywhere.</p>
-                        <p>At Techspar, we ensure your business card design reflects your brand image and acts as a visual extension of your overall branding, helping you stand out and leave a lasting impression.</p>
+                        <p>At techspar, we ensure your business card design reflects your brand image and acts as a visual extension of your overall branding, helping you stand out and leave a lasting impression.</p>
 
                     </div>
 

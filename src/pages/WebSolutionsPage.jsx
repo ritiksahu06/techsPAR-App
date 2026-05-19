@@ -28,7 +28,7 @@ const WebSolutionsPage = () => {
                         </div>
 
                         <p>
-                            With over 5 years of experience in web development, we at TechsPAR specialize in building websites that deliver an excellent user experience and are easy to manage.
+                            With over 5 years of experience in web development, we at techsPAR specialize in building websites that deliver an excellent user experience and are easy to manage.
                         </p>
 
                         <p>
@@ -49,7 +49,7 @@ const WebSolutionsPage = () => {
                     </div>
                     <div className="container">
                         <p>
-                            Whether you are looking for a dynamic or static website, TechsPAR offers tailored solutions to meet your needs.
+                            Whether you are looking for a dynamic or static website, techsPAR offers tailored solutions to meet your needs.
                         </p>
 
                         <p>
@@ -126,7 +126,7 @@ const WebSolutionsPage = () => {
                     <div className="container">
                         <p>Our corporate web development approach focuses on delivering user-friendly, scalable, and results-driven solutions that help you stay ahead of the competition.</p>
                         <p>Corporate websites can be structured in various ways to effectively present content, including blogs, FAQ sections, newsletter signups, product pages, and more—ensuring meaningful engagement with your audience.</p>
-                        <p>As a leading corporate web design company, TechsPAR specializes in enhancing the online presence of businesses like yours. Our team consists of skilled professionals who stay at the forefront of modern web technologies and are passionate about building high-quality corporate websites from the ground up, as well as optimizing existing ones for better performance.</p>
+                        <p>As a leading corporate web design company, techsPAR specializes in enhancing the online presence of businesses like yours. Our team consists of skilled professionals who stay at the forefront of modern web technologies and are passionate about building high-quality corporate websites from the ground up, as well as optimizing existing ones for better performance.</p>
                     </div>
                 </div>
 
@@ -320,7 +320,7 @@ const WebSolutionsPage = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>TechsPAR provides high-quality and timely website maintenance services to ensure your website remains up-to-date, secure, and fully functional at all times.</p>
+                        <p>techsPAR provides high-quality and timely website maintenance services to ensure your website remains up-to-date, secure, and fully functional at all times.</p>
                         <p>As your trusted outsourcing partner, we handle the day-to-day maintenance of your website, allowing you to focus on running your business efficiently. Our team works closely with you to plan and implement regular updates, content changes, and performance improvements as needed.</p>
                         <p>Website maintenance includes updating, editing, and optimizing existing web pages to keep your content fresh, relevant, and aligned with your business goals.</p>
                     </div>

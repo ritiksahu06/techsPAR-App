@@ -28,7 +28,7 @@ const Events = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p className='animate-right delay-1'>At Techspar, we have extensive experience in managing services for events and exhibitions. With years of industry expertise, we have successfully delivered solutions for large-scale events, earning the trust and confidence of our clients.</p>
+                        <p className='animate-right delay-1'>At techspar, we have extensive experience in managing services for events and exhibitions. With years of industry expertise, we have successfully delivered solutions for large-scale events, earning the trust and confidence of our clients.</p>
                         <p className='animate-right delay-2'>We provide complete end-to-end event solutions, starting from developing event websites with detailed information, schedules, and updates. Our services also include online registration for exhibitors, delegates, and visitors, along with on-site registration setup at the venue.</p>
                         <p className='animate-right delay-3'>From hardware, software, and design to manpower, stationery, data entry, and reporting—we handle every aspect to ensure smooth and efficient event operations.</p>
                         <p className='animate-right delay-4'>Keeping today’s dynamic environment in mind, we believe that “the show must go on.” Our goal is to deliver seamless execution and support at every stage of your event.</p>
@@ -39,7 +39,7 @@ const Events = () => {
 
                     <div className="container">
                         <p className='animate-right delay-5'>
-                            Whether you are looking for a dynamic or static website, TechsPAR offers tailored solutions to meet your needs.
+                            Whether you are looking for a dynamic or static website, techsPAR offers tailored solutions to meet your needs.
                         </p>
 
                         <p className='animate-right delay-6'>
@@ -64,7 +64,7 @@ const Events = () => {
 
                         <p className='animate-left delay-1'>We offer custom event website design services for exhibition and conference organizers, ensuring every element is tailored to meet specific event requirements.</p>
                         <p className='animate-left delay-2'>An event website serves as a central source of information for attendees, providing all the essential details in one place. It also acts as a cost-effective digital platform to promote your event and reach a wider audience.</p>
-                        <p className='animate-left delay-3'>While creating an event website may seem simple, it is important to present information clearly and effectively. At Techspar, we focus on including all key details to ensure attendees are well-informed and prepared.</p>
+                        <p className='animate-left delay-3'>While creating an event website may seem simple, it is important to present information clearly and effectively. At techspar, we focus on including all key details to ensure attendees are well-informed and prepared.</p>
 
 
                     </div>
@@ -197,7 +197,7 @@ const Events = () => {
 
                         <p>Custom and personalized lanyards and badge holders are ideal for trade shows, conventions, and corporate events. They help showcase your brand professionally during meetings and events, with a wide range of styles, colors, and features available to suit your needs.</p>
                         <p>Whether you are an executive, manager, or business owner, lanyards and card holders are essential for keeping your ID and name cards secure and well-maintained. They not only enhance your professional appearance but also protect cards from damage such as water, tears, and bending.</p>
-                        <p>At Techspar, we provide a complete range of name tags, card holders, and lanyards, sourced from trusted manufacturers. As a one-stop solution, we ensure high-quality products at competitive prices to meet your event and corporate requirements.</p>
+                        <p>At techspar, we provide a complete range of name tags, card holders, and lanyards, sourced from trusted manufacturers. As a one-stop solution, we ensure high-quality products at competitive prices to meet your event and corporate requirements.</p>
 
                     </div>
 
@@ -217,7 +217,7 @@ const Events = () => {
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
-                        <p>We truly value our clients and believe in open communication, transparency, and high-quality customer service. At Techspar, we take care of your event staffing and management needs from start to finish, allowing you to focus on the bigger picture and achieve your event goals.</p>
+                        <p>We truly value our clients and believe in open communication, transparency, and high-quality customer service. At techspar, we take care of your event staffing and management needs from start to finish, allowing you to focus on the bigger picture and achieve your event goals.</p>
                         <p>We understand that successful events require skilled and reliable staff, but finding the right people can be time-consuming and challenging. That’s why professional event staffing plays a crucial role in ensuring smooth execution.</p>
                         <p>With our expertise, we help you select the right team for your event, ensuring efficiency, professionalism, and a seamless experience for both organizers and attendees.</p>
 

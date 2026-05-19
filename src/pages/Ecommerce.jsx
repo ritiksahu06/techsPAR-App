@@ -30,7 +30,7 @@ const Ecommerce = () => {
                         </div>
 
                         <p>E-commerce development focuses on building powerful online stores that allow businesses to sell products and services efficiently. A well-designed e-commerce website acts as a digital storefront, helping you showcase products, manage inventory, and process orders smoothly.</p>
-                        <p>At Techspar, we create secure, scalable, and user-friendly e-commerce websites that deliver a seamless shopping experience and drive business growth.</p>
+                        <p>At techspar, we create secure, scalable, and user-friendly e-commerce websites that deliver a seamless shopping experience and drive business growth.</p>
 
                     </div>
 

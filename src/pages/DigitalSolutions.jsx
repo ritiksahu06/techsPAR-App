@@ -176,7 +176,7 @@ const DigitalSolutions = () => {
                         </div>
 
                         <p>PPC (Pay-Per-Click) advertising allows marketers to reach online users across various digital platforms through paid ads. It is a broad term that refers to any type of digital marketing where advertisers pay each time a user clicks on their ad.</p>
-                        <p>Businesses like TechsPAR Solutions can run PPC campaigns on platforms such as Google, Bing, LinkedIn, Twitter, Pinterest, and Facebook to target users searching for relevant products or services.</p>
+                        <p>Businesses like techsPAR Solutions can run PPC campaigns on platforms such as Google, Bing, LinkedIn, Twitter, Pinterest, and Facebook to target users searching for relevant products or services.</p>
                         <p>PPC campaigns also offer advanced targeting options, allowing businesses to reach specific audiences based on factors like age, gender, interests, and location.</p>
 
                     </div>
