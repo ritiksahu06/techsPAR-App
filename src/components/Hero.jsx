@@ -160,7 +160,7 @@ const Hero = () => {
         <SwiperSlide>
           <div className="slide">
             {/* <img src="/images/slide-22.webp" alt="" /> */}
-            <img src="/images/slide-slide.webp" alt="" />
+            <img src="/images/techspar-home-slider-1.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">Seamless End-to-End Web</p>
@@ -183,7 +183,7 @@ const Hero = () => {
         <SwiperSlide>
           <div className="slide">
             {/* <img src="/images/slide1.webp" alt="" /> */}
-            <img src="/images/realistic-objective-background_79603-1821.jpg" alt="" />
+            <img src="/images/techspar-home-slider-2.webp" alt="" />
             {/* <img src="/images/slide-slide.webp" alt="" /> */}
 
             <div className="slide-content">
@@ -208,7 +208,7 @@ const Hero = () => {
           <div className="slide">
             {/* <img src="/images/slide-11.webp" alt="" /> */}
             {/* <img src="/images/slide-slide-2.avif" alt="" /> */}
-            <img src="/images/slide-33.webp" alt="" />
+            <img src="/images/techspar-home-slider-3.webp" alt="" />
 
             <div className="slide-content">
               <p className="small-text">We don’t just satisfy clients,</p>

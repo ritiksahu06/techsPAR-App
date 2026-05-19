@@ -32,22 +32,22 @@ const Footer = () => {
               </div>
               <ul className="list-unstyled">
                 <li className="pt-2">
-                  <a href="#">Software Solutions</a>
+                  <a href="/services/web-solutions">Software Solutions</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">Digital Marketing</a>
+                  <a href="/services/digital-solutions">Digital Marketing</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">Mobile App Development</a>
+                  <a href="/services/mobile-app">Mobile App Development</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">Brading & Printing</a>
+                  <a href="/services/branding">Brading & Printing</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">Event Services</a>
+                  <a href="/services/events">Event Services</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">E-Commerce Development</a>
+                  <a href="/services/ecommerce">E-Commerce Development</a>
                 </li>
               </ul>
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                   <a href="/our-gallery">Our Gallery</a>
                 </li>
                 <li className="pt-2">
-                  <a href="#">Join Us</a>
+                  <a href="/join-us">Join Us</a>
                 </li>
               </ul>
             </div>

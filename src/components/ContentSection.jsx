@@ -246,7 +246,7 @@ const ContentSection = ({ isAboutPage = false }) => {
         {/* IMAGE */}
         <div className="col-12 col-lg-6 mb-4 mb-lg-0 text-center animate-left">
           <img
-            src="/images/about-img.webp"
+            src="/images/techspar-about-us.webp"
             className="img-fluid rounded about-img"
             alt="About"
           />
