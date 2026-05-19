@@ -473,7 +473,12 @@ const WebSolutionsPage = () => {
                                 </span>
                             </p>
                             <p className='text-center'>Need help?</p>
-                            <p className='text-center'>For further details regarding our services, please feel free to contact us at <span className='text-primary fw-bold'>info@techspar.in</span></p>
+                            <p className='text-center'>For further details regarding our services, please feel free to contact us at <span className='text-primary fw-bold'><a
+                    href="mailto:parihar.ms@techspar.in"
+                    className="text-decoration-none text-reset"
+                  >
+                    info@techspar.in
+                  </a></span></p>
 
                         </div>
                     </div>
