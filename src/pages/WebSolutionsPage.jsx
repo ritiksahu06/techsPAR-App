@@ -106,7 +106,7 @@ const WebSolutionsPage = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6">
                         <div className="text-center mb-3">
-                            <h2 className="fw-bold">Corporate sites</h2>
+                            <h2 className="fw-bold">Corporate Sites</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
                         <p>Corporate website development plays a vital role in today’s business landscape. Over the years, both corporate website development and design have become essential for the success of organizations ranging from small businesses to large multinational corporations. Regardless of your products, services, or business goals, growth is only possible when you expand your customer base—and the internet remains the most powerful medium to achieve that.</p>
@@ -148,7 +148,7 @@ const WebSolutionsPage = () => {
                     {/* LEFT SIDE (LIMITED CONTENT) */}
                     <div className="col-lg-6">
                         <div className="text-center mb-3">
-                            <h2 className="fw-bold">Brand/Product sites</h2>
+                            <h2 className="fw-bold">Brand/Product Sites</h2>
                             <div className="loader mx-auto mt-3"></div>
                         </div>
 
